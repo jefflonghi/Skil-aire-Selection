@@ -1,0 +1,3027 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<META HTTP-EQUIV="MSThemeCompatible" content="Yes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<style type="text/css">
+html { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -ms-touch-action: none;}
+.A5container {float:left;padding:0px;}
+.A5CWLayout {padding: 4px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.A5GridHideErrorCol .A5GridErrorCol {display:none; }
+.A5GridRowErrorIcon {display:none;}
+.A5GridHasRowError .A5GridRowErrorIcon {display:inline;}
+.A5GridRowViewMode {display:block;}
+.A5GridRowEditMode {display:none;}
+.A5GridRowInEditMode .A5GridRowViewMode {display:none;}
+.A5GridRowInEditMode .A5GridRowEditMode {display:block;}
+.A5GridRowDirty {display:none;}
+.A5GridRowClean {display:inline;}
+.A5GridRowIsDirty .A5GridRowDirty {display:inline;}
+.A5GridRowIsDirty .A5GridRowClean {display:none;}
+.errorText {color:red;font-size:8pt;}
+.errorTextHighlight {font-weight:bold;font-size:8pt;}
+.errorTip {color:red;background:#fffafa url('a5images/boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png');border:1px solid #f88;margin-top:2px;padding:2px;font-size:8pt;}
+.errorInput {color:red;border:1px solid red;margin:1px;}
+.errorInputHighlight {color:red;border:2px solid red;margin:0px;}
+.A5SelectedButton {opacity:.5;filter:alpha(opacity=50);}
+.A5InvisibleLock {background: rgba(0,0,0,0); }
+
+.A5AccordionTitleOn, .A5AccordionTitleOff, .A5AccordionTitleDisabled {display: block;border: 1px solid #999;padding: 2px;text-decoration: none;cursor: pointer;margin-bottom: 2px; padding: 2px}
+.A5AccordionPane {border: 1px solid #999;border-top: none;margin-bottom: 2px;margin-top: -2px;}
+.A5TabTopOn, .A5TabTopOff, .A5TabTopDisabled {display: block;float: left;border: 1px solid #999;border-bottom: none;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabTopOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBottomOn, .A5TabBottomOff, .A5TabBottomDisabled {display: block;float: left;border: 1px solid #999;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabBottomOn {border-top: none;padding-top: 3px;}
+.A5TabLeftOn, .A5TabLeftOff, .A5TabLeftDisabled {display: block;border: 1px solid #999;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabLeftOn {margin-right: -1px;padding-right: 3px;border-right: none;}
+.A5TabRightOn, .A5TabRightOff, .A5TabRightDisabled {display: block;border: 1px solid #999;border-left: none;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabRightOn {margin-left: -1px;padding-left: 3px;}
+.A5TabTopPane, .A5TabBottomPane, .A5TabLeftPane, .A5TabRightPane {border: 1px solid #999; padding: 2px;}
+
+
+.A5TabBand {border: 1px solid #999; padding: 0px;}
+.A5TabBandTabOn, .A5TabBandTabOff, .A5TabBandTabDisabled {position: relative;display: block;border: 1px solid #999;border-bottom: none;margin-right: 2px;margin-top: 2px;padding: 2px;text-decoration: none;cursor: pointer;white-space: nowrap;}
+.A5TabBandTabOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBandSeparator {border: none;border-top: 1px solid #999;height: 3px;padding: 0px;font: 0pt arial;}
+.A5TabBandLeftScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-left: none;border-bottom: none;}
+.A5TabBandRightScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-right: none;border-bottom: none;}
+.A5TabBandTabDisabled, .A5TabTopDisabled, .A5TabLeftDisabled, .A5TabRightDisabled, .A5TabBottomDisabled, .A5AccordionTitleDisabled {opacity: .5; filter: alpha(opacity: 50)}
+.A5Window {-moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.A5WindowLock{border: 1px solid #000;background: #222;opacity: .25;filter: alpha(opacity: 25);}
+
+.A5AccordionTitleOn:hover, .A5AccordionTitleOff:hover, .A5TabBandTabOff:hover, .A5TabTopOff:hover, .A5TabLeftOff:hover, .A5TabRightOff:hover, .A5TabBottomOff:hover{text-decoration: underline;}
+
+.A5MenuItem {text-decoration:none;}
+.A5DialogRSSeparator {border-top: 1px dotted #ccc; line-height:5px; margin-top: 5px;}
+.A5DialogRSFooter {margin-top: 10px;}
+
+
+
+
+
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/iOS/style.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+</style>
+
+<script src="phonegap.js"></script>
+
+
+<script type="text/javascript" src="javascript/a5.js"></script>
+<script type="text/javascript" src="javascript/a5_url.js"></script>
+
+<script type="text/javascript" src="css/iOS/style.js"></script>
+<script type="text/javascript" src="javascript/A5jQueryWithUI.js"></script>
+
+<script>
+	if(typeof jQuery != 'undefined') jQuery.noConflict();
+</script>
+
+
+
+<script type="text/javascript" language="javascript">
+A5._windowDefaults={title:{tools:{defaults:{'close':{action:'close',name:'close',image:'a5images/windowbuttonclose.png'}}}}}
+A5.serverSideDateFormat = 'MM/dd/yyyy';
+</script>
+
+
+
+
+</head>
+<body class="iOSPage">
+<iframe style="display:none;" id="DLG1.__IFRAME1"></iframe>
+<input type="hidden" value="" id="DLG1.PARAMETERBUCKET"/>
+<input type="file" style="position:absolute; top:-1000px;visibility:hidden;" accept="image/*" id="DLG1._GETPHOTO"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" multiple = "" id="DLG1._GETFILEMULTI"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" id="DLG1._GETFILE"/><input type="hidden" id="DLG1.V.R1.CUSTOMERLIST" name="V.R1.CUSTOMERLIST" />
+<input type="hidden" id="DLG1.V.R1.MENULIST" name="V.R1.MENULIST" />
+<div 	id="DLG1.V.R1.DROPDOWNMENU1"   
+			class=""  style="; display: none;"  >
+<div 	id="DLG1.V.R1.CONTAINER_6"   
+			class="A5CWLayout "  style="padding: 0px; "  ><div  style="white-space:nowrap; text-align: left;" >
+<button  type="button" id="DLG1.V.R1.BUTTON_11"    ></button><br /><button  type="button" id="DLG1.V.R1.BUTTON_12"    ></button><br /><button  type="button" id="DLG1.V.R1.BUTTON_13"    ></button><br />
+</div><div style="font: 0pt arial;clear:both;"></div>
+	</div>
+<br  id="DLG1.V.R1.CONTAINER_6.BREAK"  style="clear:both; " />
+
+
+
+
+<div style="font: 0pt arial;clear:both;"></div>
+	</div>
+
+
+<div 	id="DLG1.V.R1.SLIDEINMENU"   
+			class=""  style="; display: none;"  >
+<div class="A5CWLayout" style="width: 4in" >
+	<input type="hidden" id="DLG1.V.R1.MENULIST" name="V.R1.MENULIST" />
+<div  class="iOSList"   style="padding:0px; "  >
+	<div id="DLG1.V.R1.MENULIST.CONTROL"  style="overflow: auto; width: 100%; height: 3in; "></div>
+</div>
+
+</div>
+<div style="font: 0pt arial;clear:both;"></div>
+	</div>
+
+
+
+<script type="text/javascript" language="javascript">
+
+A5.u.drag.useDragScrolling = 'auto';
+if(typeof DLG1_DlgObj == 'object') {
+	DLG1_DlgObj._destroy();
+	try {
+		delete DLG1_DlgObj;
+	} catch(e) {
+		DLG1_DlgObj = undefined;
+	}
+};
+;if(typeof DLG1_PanelObj != 'undefined') {
+	var ele = $(DLG1_PanelObj.getPanelId());
+	if(ele) {
+		if(ele.parentNode) ele.parentNode.removeChild(ele);
+	}
+	delete DLG1_PanelObj;
+}
+;window['DLG1_PanelObj'] = new A5.PanelNavigator([
+{
+	name: 'TOOL',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'url',
+			src: 'http://planetaryobserver.net/test/Skil-aire/Selection%20Tool/contact/app2.php'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div \tid="DLG1.V.R1.CONTAINER_8"    \t\t\tclass="A5CWLayout "  style="padding: 6px; position: absolute; top: 0px; left: 0px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_14"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	}
+}),
+	controls: {
+		prev: {
+			has: false,
+			id: 'DLG1.V.R1.'
+		}
+	}
+},
+{
+	name: 'PANEL_CUSTOMERLIST',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div class="A5CWLayout" style="width: 4in" >\n\t\n<div  class="iOSList"   style="padding:0px; "  >\n\t<div id="DLG1.V.R1.CUSTOMERLIST.CONTROL"  style="overflow: auto; width: 100%; height: 3in; "></div>\n</div>\n\n</div><br  style="clear:both; " />\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div style="display:table; margin:auto;"><div \tid="DLG1.V.R1.CONTAINER_7"    \t\t\tclass="A5CWLayout "  style="padding: 6px; position: absolute; top: 0px; left: 0px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_8"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div class="A5CWLayout" style="width: " > \t<label id="DLG1.LBL.R1.STATICTEXT_CUSTOMERLIST.RECORDCOUNT" for="DLG1.V.R1.STATICTEXT_CUSTOMERLIST.RECORDCOUNT" title="" class="iOSDialogLabel" style="display:block;">&nbsp;</label>  \t<div id="DLG1.V.R1.STATICTEXT_CUSTOMERLIST.RECORDCOUNT" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Records: <span id="DLG1.CUSTOMERLIST.RECORDCOUNT"></span></div>  \t </div> </div><div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	},
+	onSize: function() {;
+if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('CUSTOMERLIST'); if(mObj) mObj.refresh();}}
+})
+},
+{
+	name: 'PANEL_SEARCH',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div style="width:100%;" class="A5CWLayout iOSTabT" id="DLG1.V.R1.TAB_1">\n\t<div id="DLG1.V.R1.TAB_1.TABBAND" class="iOSTabTBand">\n\t\t<a id="DLG1.V.R1.TAB_1.0.TAB" class="" href="#">Simple Search</a>\n\t\t<a id="DLG1.V.R1.TAB_1.1.TAB" class="" href="#">Advanced Search</a>\n\t<br style="clear: both;" />\n\t</div>\n\t<div id="DLG1.V.R1.TAB_1.PANES" class="iOSTabTPanes">\n<div id="DLG1.V.R1.TAB_1.0.PANE">\n\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCH" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SEARCH"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 50%" >\n\t<button type="button" id="DLG1.V.R1.SIMPLESEARCHBUTTON"    ></button>\n</div>\n\n\n<div class="A5CWLayout" style="width: 50%" >\n\t<button type="button" id="DLG1.V.R1.CLEARSIMPLESEARCHBUTTON"    ></button>\n</div><div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>\n</div>\n<div id="DLG1.V.R1.TAB_1.1.PANE">\n\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCHCONTACTNAME" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SEARCHCONTACTNAME"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCHCOMPANYNAME" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SEARCHCOMPANYNAME"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCHCITY" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SEARCHCITY"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCHCOUNTRY" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.SEARCHCOUNTRY"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 50%" >\n\t<button type="button" id="DLG1.V.R1.ADVANCEDSEARCHBUTTON"    ></button>\n</div>\n\n\n<div class="A5CWLayout" style="width: 50%" >\n\t<button type="button" id="DLG1.V.R1.CLEARADVANCEDSEARCHBUTTON"    ></button>\n</div><div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>\n</div>\n</div>\n</div><br  style="clear:both; " />\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_9"    ></button> </div> </div> <div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div style="display:table; margin:auto;"> <div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_3" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Search</div> </div> </div></div> <div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div style="float:right;">&nbsp;</div></div> <br style="clear: both;" /><div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	}
+})
+},
+{
+	name: 'PANEL_CUSTOMERFORM',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.CUSTOMERID" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.CUSTOMERID"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.CONTACTNAME" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.CONTACTNAME"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.COMPANYNAME" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.COMPANYNAME"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.ADDRESS" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.ADDRESS"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.CITY" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.CITY"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<input\ttype="text" id="DLG1.V.R1.COUNTRY" title=""     class="iOSEdit" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"    name="V.R1.COUNTRY"    value=""    />\n\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: 100%" >\n\t<label id="DLG1.LBL.R1.IMAGE" for="DLG1.V.R1.IMAGE" title="" class="iOSDialogLabel" style="font-weight: normal; display: block; ">Tap on Menu button to take a photo.</label>\n\n\t<img src="" id="DLG1.V.R1.IMAGE" class="" title="" style="width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onerror="if(typeof DLG1_DlgObj != \'undefined\') DLG1_DlgObj._executeEvent(\'onImageError\',{element: this});"  /><input type="hidden" id="DLG1.V.R1.IMAGE_HIDDENA5FN" name="V.R1.IMAGE_HIDDENA5FN" >\n</div><br  style="clear:both; " />\n<div class="A5CWLayout" style="width: "  id="DLG1.V.R1.GLOBALUPDATEERRORS" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;">\n</div><br  style="clear:both; " />\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_7"    ></button> </div> </div> <div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div style="display:table; margin:auto;"> <div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_2" title=""  class="" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Edit</div> </div> </div></div> <div class="A5CWLayout" style="padding: 0px; width: 33.3333333333333%"><div style="float:right;"> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_10"    ></button> </div> </div></div> <br style="clear: both;" /><div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+		html: '<div class="A5CWLayout" style="padding: 0px; width: 50%"><div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_SUBMIT"    ></button> </div> </div> <div class="A5CWLayout" style="padding: 0px; width: 50%"><div style="float:right;"> <div class="A5CWLayout" style="width: 50%" > \t<button type="button" id="DLG1.V.R1.BUTTON_RESET"    ></button> </div> </div></div> <br style="clear: both;" />',
+		show: true
+	},
+	overlay: {
+	}
+})
+},
+{
+	name: 'HORIZONTAL',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'url',
+			src: 'http://planetaryobserver.net/test/pdf/Horizontal/'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div \tid="DLG1.V.R1.CONTAINER_9"    \t\t\tclass="A5CWLayout "  style="padding: 6px; position: absolute; top: 0px; left: 0px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_15"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	}
+}),
+	controls: {
+		prev: {
+			has: false,
+			id: 'DLG1.V.R1.'
+		}
+	}
+},
+{
+	name: 'VERTICAL',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'url',
+			src: 'http://planetaryobserver.net/test/pdf/Vertical/'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div \tid="DLG1.V.R1.CONTAINER_10"    \t\t\tclass="A5CWLayout "  style="padding: 6px; position: absolute; top: 0px; left: 0px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_16"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	}
+}),
+	controls: {
+		prev: {
+			has: false,
+			id: 'DLG1.V.R1.'
+		}
+	}
+},
+{
+	name: 'SKIL',
+	src: new A5.PanelCard({
+	theme: 'iOS',
+	body: {
+		content: {
+			type: 'url',
+			src: 'http://skil-aire.com/'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div \tid="DLG1.V.R1.CONTAINER_11"    \t\t\tclass="A5CWLayout "  style="padding: 6px; position: absolute; top: 0px; left: 0px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_17"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div style="display:none;"></div>',
+		show: true
+	},
+	footer: {
+	},
+	overlay: {
+	}
+}),
+	controls: {
+		prev: {
+			has: false,
+			id: 'DLG1.V.R1.'
+		}
+	}
+}
+],{
+	type: 'carousel',
+	flow: 'ltr',
+	loopNavigate: false,
+	onPanelActivate: function() {DLG1_DlgObj.refreshClientSideComputations();},
+	onSize: function() {;if(typeof DLG1_DlgObj != 'undefined') {
+	if(typeof DLG1_DlgObj._findActiveLayoutRule != 'undefined') { 
+		DLG1_DlgObj._findActiveLayoutRule();
+	}
+}},
+	theme: 'iOS',
+	header: {
+		show: false
+	},
+	footer: {
+	},
+	overlay: {
+	},
+	controls: {
+		prev: {
+			has: false
+		},
+		next: {
+			has: false
+		},
+		back: {
+			has: false
+		},
+		forward: {
+			has: false
+		}
+	},
+	body: {
+	},
+	animation: {
+		duration: 400
+	}
+})
+var ele = window['DLG1_PanelObj'].create('DLG1.R1');
+		var panelRootId = '';
+		var flagSizeToParent = true;
+		var wf_alias = 'DLG1';
+		if(panelRootId != '') { 
+			if (!$(panelRootId)) panelRootId = '';
+		}
+		if(panelRootId != '') { 
+			$(panelRootId).appendChild(ele);
+			if(flagSizeToParent) { 
+				window[wf_alias + '_PanelObj'].bindSize('parent');
+			}
+		} else { 
+			document.body.insertBefore(ele,document.body.firstChild);
+			window[wf_alias + '_PanelObj'].bindSize('window');
+		}
+DLG1_PanelObj._panelPath = {
+	TOOL: 'TOOL',
+	PANEL_CUSTOMERLIST: 'PANEL_CUSTOMERLIST',
+	PANEL_SEARCH: 'PANEL_SEARCH',
+	PANEL_CUSTOMERFORM: 'PANEL_CUSTOMERFORM',
+	HORIZONTAL: 'HORIZONTAL',
+	VERTICAL: 'VERTICAL',
+	SKIL: 'SKIL'
+}
+DLG1_PanelObj._displayNames = {
+TOOL : 'TOOL',PANEL_CUSTOMERLIST : 'PANEL_CUSTOMERLIST',PANEL_SEARCH : 'PANEL_SEARCH',PANEL_CUSTOMERFORM : 'PANEL_CUSTOMERFORM',HORIZONTAL : 'HORIZONTAL',VERTICAL : 'VERTICAL',SKIL : 'SKIL',PANELNAVIGATOR_1 : 'PANELNAVIGATOR_1'
+};
+if(typeof DLG1_DlgObj == 'object') DLG1_DlgObj._destroy();
+var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
+	ajaxURL: '/SKIL-AIRESELECT.a5wcmp?__virtualPage=__a5RunDialog.a5w&__dialogFilename=SKIL-AIRESELECT&__alias=DLG1&__unsaved=no',
+	_embeddedMode: false,
+	_livePreviewInBuilder: false,
+	componentGUID: '02701a0c-4208-493d-a3b8-632c4071c05d',
+	columnInfo: {'CUSTOMERLIST': {info: {controlType: 'List'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SEARCH': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SEARCHCONTACTNAME': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SEARCHCOMPANYNAME': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SEARCHCITY': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'SEARCHCOUNTRY': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CUSTOMERID': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CONTACTNAME': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'COMPANYNAME': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'ADDRESS': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'CITY': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'COUNTRY': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'IMAGE': {info: {controlType: 'Image'}, hiddenVal: false, type: 'img,img', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'MENULIST': {info: {controlType: 'List'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	originalValues: [{
+	'CUSTOMERLIST': '',
+	'SEARCH': '',
+	'SEARCHCONTACTNAME': '',
+	'SEARCHCOMPANYNAME': '',
+	'SEARCHCITY': '',
+	'SEARCHCOUNTRY': '',
+	'CUSTOMERID': '',
+	'CONTACTNAME': '',
+	'COMPANYNAME': '',
+	'ADDRESS': '',
+	'CITY': '',
+	'COUNTRY': '',
+	'IMAGE': 'a5images/MissingPersonImage.png',
+	'IMAGE_HIDDENA5FN': '',
+	'MENULIST': ''
+}],
+	defaultValues: {
+	CUSTOMERLIST: '',
+	SEARCH: '',
+	SEARCHCONTACTNAME: '',
+	SEARCHCOMPANYNAME: '',
+	SEARCHCITY: '',
+	SEARCHCOUNTRY: '',
+	CUSTOMERID: '',
+	CONTACTNAME: '',
+	COMPANYNAME: '',
+	ADDRESS: '',
+	CITY: '',
+	COUNTRY: '',
+	IMAGE: 'a5images/MissingPersonImage.png',
+	IMAGE_HIDDENA5FN: '',
+	MENULIST: ''
+},
+	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+	datePickerDayNames: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+	datePickerTodayButton: 'Today',
+	datePickerCloseButton: '',
+	datePickerFirstDayOfWeek: 1,
+	resetFormMessage: 'Are you sure you want to reset the form?',
+	resetFormTitle: 'Warning',
+	resetFormIcon: 'css/iOS/MessageQuestion.png',
+	dirtyFormMessage: 'You must first save your changes or cancel changes by clicking the Reset button.',
+	dirtyFormTitle: 'Notice',
+	dirtyFormIcon: 'css/iOS/MessageInfo.png',
+	deleteRecordDialogTitle: 'Delete Record',
+	deleteRecordDialogMessage: 'Are you sure you want to delete this record?',	
+	ssDateFormat: 'MM/dd/yyyy',
+	styleName: 'iOS',
+	_fieldHelpers_DIALOG2: [],
+	parentComponentAlias: '',
+	submitIfHasClientSideErrors: true, 
+	rowErrors: {
+				showMessageBox: false,
+				messageBoxTitle: 'Error',
+				style: 'color: red; width: 6in; height: 2in;'
+		},
+	fieldErrors: {
+		type: 'block', 
+		className: 'errorText',
+		inputClassName: 'iOSEditError',
+		edit: { 
+			container: { className: 'iOSEditBGError'}
+		},
+		icon: 'css/iOS/EditError.png',
+		global: {
+			contId: 'DLG1.GLOBALERRORS',
+			hoverClassName: 'errorTextHighlight',
+			hoverInputClassName: 'errorInputHighlight'
+		}
+	}
+	});
+DLG1_DlgObj._onOrientationChange =  function(e) { ;
+DLG1_DlgObj._findActiveLayoutRule();
+;  };
+A5.__componentObj = DLG1_DlgObj;
+DLG1_DlgObj._tabObjects = ['TAB_1'];
+A5.loadJavascript('function callMenuItem(item) { \n\tDLG1_DlgObj.closeWindow(\'SLIDEINMENU\');\n\tif(item == \'Search\') DLG1_DlgObj.panelSetActive(\'PANEL_SEARCH\',true);\n\tif(item == \'Selection Tool\') DLG1_DlgObj.panelSetActive(\'TOOL\',true);\n\tif(item == \'Vertical\') DLG1_DlgObj.panelSetActive(\'VERTICAL\', true);\n\tif(item == \'Horizontal\') DLG1_DlgObj.panelSetActive(\'HORIZONTAL\', true);\n\tif(item == \'Skil-aire.com\') DLG1_DlgObj.panelSetActive(\'SKIL\', true);\n}');
+window['DLG1.V.R1.TAB_1Obj'] = new A5.Tab('DLG1.V.R1.TAB_1',[
+{ 	html: 'Simple Search', 	value: '1', 	onDynamicLoadDelay: 0, 	show: true, 	disabled: false }, 
+{ 	html: 'Advanced Search', 	value: '2', 	onDynamicLoadDelay: 0, 	show: true, 	disabled: false }
+],
+	{
+	theme: 'iOS',
+	onChange: function() {
+DLG1_DlgObj._tabPaneChange('TAB_1');}
+}
+);
+	window['DLG1.V.R1.TAB_1Obj'].select('1');
+DLG1_DlgObj.fieldHelpers['SEARCH'] = new A5.Edit({
+	watermark: {
+		text: 'Enter value to search for'
+	}
+});
+DLG1_DlgObj.fieldHelpers['SEARCHCONTACTNAME'] = new A5.Edit({
+	watermark: {
+		text: 'Contact Name'
+	}
+});
+DLG1_DlgObj.fieldHelpers['SEARCHCOMPANYNAME'] = new A5.Edit({
+	watermark: {
+		text: 'Company'
+	}
+});
+DLG1_DlgObj.fieldHelpers['SEARCHCITY'] = new A5.Edit({
+	watermark: {
+		text: 'City'
+	}
+});
+DLG1_DlgObj.fieldHelpers['SEARCHCOUNTRY'] = new A5.Edit({
+	watermark: {
+		text: 'Country'
+	}
+});
+DLG1_DlgObj.fieldHelpers['CUSTOMERID'] = new A5.Edit({
+	watermark: {
+		text: 'Customer Id (required)'
+	}
+});
+DLG1_DlgObj.fieldHelpers['CONTACTNAME'] = new A5.Edit({
+	watermark: {
+		text: 'Contact Name'
+	}
+});
+DLG1_DlgObj.fieldHelpers['COMPANYNAME'] = new A5.Edit({
+	watermark: {
+		text: 'Company Name'
+	}
+});
+DLG1_DlgObj.fieldHelpers['ADDRESS'] = new A5.Edit({
+	watermark: {
+		text: 'Address (required)'
+	}
+});
+DLG1_DlgObj.fieldHelpers['CITY'] = new A5.Edit({
+	watermark: {
+		text: 'City (required)'
+	}
+});
+DLG1_DlgObj.fieldHelpers['COUNTRY'] = new A5.Edit({
+	watermark: {
+		text: 'Country (required)'
+	}
+});
+DLG1_DlgObj.lookups = {
+};
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_SUBMIT'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = (dialog.isDataDirty == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_SUBMIT'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_SUBMIT')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_SUBMIT'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_SUBMIT'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_SUBMIT'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;}
+}
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_RESET'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = (dialog.isDataDirty == true);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_RESET'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_RESET')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_RESET'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_RESET'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_RESET'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;}
+}
+DLG1_DlgObj._functions.action_SIMPLESEARCHBUTTON = function() {
+var keywordValue = DLG1_DlgObj.getValue('SEARCH');
+var arr = [];
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'CustomerID', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'CompanyName', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'ContactName', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'ContactTitle', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'City', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+arr.push({ searchControlName : '[[keyword]]', searchControlValue: keywordValue  ,  searchField : 'Country', searchFieldType : 'C' , searchOption: 2, allowQBF: true  }) ;
+var data = $u.o.toJSON(arr);
+var arr = [];
+arr.push(A5.ajax.buildURLParam('_method','keyword'));
+arr.push(A5.ajax.buildURLParam('_jsonCallbackData',data));
+arr.push(A5.ajax.buildURLParam('__cs_aftersearch',''));
+arr.push(A5.ajax.buildURLParam('__oi_maxKeys','1000'));
+arr.push(A5.ajax.buildURLParam('__xbFunction','actionJavascript_SIMPLESEARCHBUTTON'));
+data = arr.join('&');
+var xbasicFunction = 'system:ComputeFilterThenGetPrimaryKeyList';
+DLG1_DlgObj.ajaxCallback('G',1,xbasicFunction,'',data);
+};
+DLG1_DlgObj._functions.action_ADVANCEDSEARCHBUTTON = function() {
+var arr = [];
+arr.push(A5.ajax.buildURLParam('__sf.searchContactName',DLG1_DlgObj.getValue('SEARCHCONTACTNAME')));
+arr.push(A5.ajax.buildURLParam('__tf.searchContactName','ContactName:2:True'));
+arr.push(A5.ajax.buildURLParam('__of.searchContactName',''));
+arr.push(A5.ajax.buildURLParam('__sf.searchCompanyName',DLG1_DlgObj.getValue('SEARCHCOMPANYNAME')));
+arr.push(A5.ajax.buildURLParam('__tf.searchCompanyName','CompanyName:2:True'));
+arr.push(A5.ajax.buildURLParam('__of.searchCompanyName',''));
+arr.push(A5.ajax.buildURLParam('__sf.searchCity',DLG1_DlgObj.getValue('SEARCHCITY')));
+arr.push(A5.ajax.buildURLParam('__tf.searchCity','City:2:True'));
+arr.push(A5.ajax.buildURLParam('__of.searchCity',''));
+arr.push(A5.ajax.buildURLParam('__sf.searchCountry',DLG1_DlgObj.getValue('SEARCHCOUNTRY')));
+arr.push(A5.ajax.buildURLParam('__tf.searchCountry','Country:2:True'));
+arr.push(A5.ajax.buildURLParam('__of.searchCountry',''));
+arr.push(A5.ajax.buildURLParam('__cs_aftersearch',''));
+arr.push(A5.ajax.buildURLParam('__oi_maxKeys','1000'));
+arr.push(A5.ajax.buildURLParam('__xbFunction','actionJavascript_ADVANCEDSEARCHBUTTON'));
+var data = arr.join('&');	
+var xbasicFunction = 'system:ComputeFilterThenGetPrimaryKeyList';
+DLG1_DlgObj.ajaxCallback('G',1,xbasicFunction,'',data);
+};
+DLG1_DlgObj.setStateInfo({
+	__dialogGuid: 'd9a06000-960c-425f-9897-c2e6621ad9aa',
+	argumentsBoundToCotrols: '',
+	__dtfmt: 'MM/dd/yyyy',
+	__tfmt: '',
+	__sgr: ''
+});
+DLG1_DlgObj._cascadingControls = [];
+DLG1_DlgObj._cascadingControlsChildren = [];
+DLG1_DlgObj.setStateInfo({ });
+DLG1_DlgObj.setStateInfo({ });
+A5.msgBox.theme = 'iOS';
+A5.msgBox.buttonWidth = '1in';
+DLG1_DlgObj._defaultWindowTitleDirection = 'ltr';
+DLG1_DlgObj._controlContainers = {'SEARCH' : [{ tab: 'TAB_1', pane: 1}],'SEARCHCONTACTNAME' : [{ tab: 'TAB_1', pane: 2}],'SEARCHCOMPANYNAME' : [{ tab: 'TAB_1', pane: 2}],'SEARCHCITY' : [{ tab: 'TAB_1', pane: 2}],'SEARCHCOUNTRY' : [{ tab: 'TAB_1', pane: 2}]}
+DLG1_DlgObj._panelCardControls = {
+CUSTOMERLIST:'PANEL_CUSTOMERLIST',
+SEARCH:'PANEL_SEARCH',
+SEARCHCONTACTNAME:'PANEL_SEARCH',
+SEARCHCOMPANYNAME:'PANEL_SEARCH',
+SEARCHCITY:'PANEL_SEARCH',
+SEARCHCOUNTRY:'PANEL_SEARCH',
+CUSTOMERID:'PANEL_CUSTOMERFORM',
+CONTACTNAME:'PANEL_CUSTOMERFORM',
+COMPANYNAME:'PANEL_CUSTOMERFORM',
+ADDRESS:'PANEL_CUSTOMERFORM',
+CITY:'PANEL_CUSTOMERFORM',
+COUNTRY:'PANEL_CUSTOMERFORM',
+IMAGE:'PANEL_CUSTOMERFORM'
+}
+DLG1_DlgObj._buttons = {};
+DLG1_DlgObj._buttons['BUTTON_14'] = new A5.Button({
+	layout: 'icon',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Menu',
+	icon: 'a5images/menuPanel.png',
+	disabledIcon: 'a5images/disabledmenuPanel.png',
+	onClick: function() { 
+},
+	iconStyle: 'margin: -10px 0px -12px 0px; width:35px;',
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_8'] = new A5.Button({
+	layout: 'icon',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Menu',
+	icon: 'a5images/menuPanel.png',
+	disabledIcon: 'a5images/disabledmenuPanel.png',
+	onClick: function() { 
+},
+	iconStyle: 'margin: -10px 0px -12px 0px; width: 35px;',
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_9'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Cancel',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['SIMPLESEARCHBUTTON'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Search',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['CLEARSIMPLESEARCHBUTTON'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Clear Search',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['ADVANCEDSEARCHBUTTON'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Search',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['CLEARADVANCEDSEARCHBUTTON'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Clear Search',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_7'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Back',
+	onClick: function() { 
+},
+	theme: 'iOS:left'
+});
+DLG1_DlgObj._buttons['BUTTON_10'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Menu',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_SUBMIT'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Submit the form.',
+	html: 'Submit',
+	icon: 'css/iOS/GridRowSave.png',
+	disabledIcon: 'css/iOS/GridRowSaveDisabled.png',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_RESET'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	tip: 'Reset the value of all controls in the form.',
+	html: 'Reset',
+	icon: 'css/iOS/GridRowUndoEdits.png',
+	disabledIcon: 'css/iOS/GridRowUndoEditsDisabled.png',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_15'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Back',
+	icon: 'a5images/menuPanel.png',
+	disabledIcon: 'a5images/disabledmenuPanel.png',
+	onClick: function() { 
+},
+	theme: 'iOS:left'
+});
+DLG1_DlgObj._buttons['BUTTON_16'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Back',
+	icon: 'a5images/menuPanel.png',
+	disabledIcon: 'a5images/disabledmenuPanel.png',
+	onClick: function() { 
+},
+	theme: 'iOS:left'
+});
+DLG1_DlgObj._buttons['BUTTON_17'] = new A5.Button({
+	layout: 'text',
+	style: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Back',
+	icon: 'a5images/menuPanel.png',
+	disabledIcon: 'a5images/disabledmenuPanel.png',
+	onClick: function() { 
+},
+	theme: 'iOS:left'
+});
+DLG1_DlgObj._buttons['BUTTON_11'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; height: 40px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ;margin-bottom: 0px; border-bottom: none; border-bottom-left-radius: 0px; -moz-border-bottom-left-radius: 0px; -webkit-border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; -moz-border-bottom-right-radius: 0px; -webkit-border-bottom-right-radius: 0px;',
+	html: 'Orders',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_12'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; height: 40px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ;margin-bottom: 0px; margin-top: 0px; border-bottom: none; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px;',
+	html: 'Map',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_13'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; height: 40px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ;margin-top: 0px; border-top-left-radius: 0px; -moz-border-top-left-radius: 0px; -webkit-border-top-left-radius: 0px; border-top-right-radius: 0px; -moz-border-top-right-radius: 0px; -webkit-border-top-right-radius: 0px;',
+	html: 'Photo',
+	onClick: function() { 
+},
+	theme: 'iOS'
+});
+DLG1_DlgObj._buttons['BUTTON_14'].bind('DLG1.V.R1.BUTTON_14');
+DLG1_DlgObj._buttons['BUTTON_8'].bind('DLG1.V.R1.BUTTON_8');
+DLG1_DlgObj._buttons['BUTTON_9'].bind('DLG1.V.R1.BUTTON_9');
+DLG1_DlgObj._buttons['SIMPLESEARCHBUTTON'].bind('DLG1.V.R1.SIMPLESEARCHBUTTON');
+DLG1_DlgObj._buttons['CLEARSIMPLESEARCHBUTTON'].bind('DLG1.V.R1.CLEARSIMPLESEARCHBUTTON');
+DLG1_DlgObj._buttons['ADVANCEDSEARCHBUTTON'].bind('DLG1.V.R1.ADVANCEDSEARCHBUTTON');
+DLG1_DlgObj._buttons['CLEARADVANCEDSEARCHBUTTON'].bind('DLG1.V.R1.CLEARADVANCEDSEARCHBUTTON');
+DLG1_DlgObj._buttons['BUTTON_7'].bind('DLG1.V.R1.BUTTON_7');
+DLG1_DlgObj._buttons['BUTTON_10'].bind('DLG1.V.R1.BUTTON_10');
+DLG1_DlgObj._buttons['BUTTON_SUBMIT'].bind('DLG1.V.R1.BUTTON_SUBMIT');
+DLG1_DlgObj._buttons['BUTTON_RESET'].bind('DLG1.V.R1.BUTTON_RESET');
+DLG1_DlgObj._buttons['BUTTON_15'].bind('DLG1.V.R1.BUTTON_15');
+DLG1_DlgObj._buttons['BUTTON_16'].bind('DLG1.V.R1.BUTTON_16');
+DLG1_DlgObj._buttons['BUTTON_17'].bind('DLG1.V.R1.BUTTON_17');
+DLG1_DlgObj._buttons['BUTTON_11'].bind('DLG1.V.R1.BUTTON_11');
+DLG1_DlgObj._buttons['BUTTON_12'].bind('DLG1.V.R1.BUTTON_12');
+DLG1_DlgObj._buttons['BUTTON_13'].bind('DLG1.V.R1.BUTTON_13');
+DLG1_DlgObj._listViewSettings['CUSTOMERLIST'] = {
+	_dataSourceType: 'SQL',
+	_listFields: [
+	{
+		name: 'CustomerID',
+		defaultValue: 'return this._controlDefaultValueForListField(\'CustomerID\');'
+	},
+	{
+		name: 'CompanyName',
+		defaultValue: 'return this._controlDefaultValueForListField(\'CompanyName\');'
+	},
+	{
+		name: 'ContactName',
+		defaultValue: 'return this._controlDefaultValueForListField(\'ContactName\');'
+	},
+	{
+		name: 'Address',
+		defaultValue: 'return this._controlDefaultValueForListField(\'Address\');'
+	},
+	{
+		name: 'City',
+		defaultValue: 'return this._controlDefaultValueForListField(\'City\');'
+	},
+	{
+		name: 'Country',
+		defaultValue: 'return this._controlDefaultValueForListField(\'Country\');'
+	},
+	{
+		name: 'ImageThumbnail',
+		defaultValue: 'return this._controlDefaultValueForListField(\'ImageThumbnail\');',
+		image: {
+			embedded: false,
+			type: 'JPG'
+		}
+	}
+],
+	_searchPartHas: false,
+	_mediaFields: ['ImageThumbnail'],
+	_mediaTypes: {
+ImageThumbnail:"Image"
+},
+	_phoneGap: {
+		mediaFiles: {
+			protectedRead: false,
+			target: 'server',
+			targetFilenameFunction: 'return \'<DeviceId>_\' +e.object.listFieldName + \'_\' + A5.ts() + \'_\' +e.name',
+			showProgress: false,
+			download: {
+				autodownloadFilesOnPullSynch: false,
+				deleteOrphansAfterSync: false,
+				targetFolder: '_AAFiles',
+				showProgress: false
+			}
+		}
+	},
+	_dvmode: 'enter',
+	_hasDetailView: false,
+	theme: 'iOS',
+	scroll: {
+		axis: 'both',
+		indicator: {
+			show: true,
+			h: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				left: '0px',
+				right: '0px'
+			},
+			v: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				top: '0px',
+				bottom: '0px'
+			}
+		},
+		momentum: {
+			allow: true
+		},
+		pull: {
+			y: 'auto',
+			x: 'auto'
+		}
+	},
+	layout: 'Default',
+	calculateValue: function(data) {  {var _val = '' +data.__primaryKey; if((_val == '' ||  _val == 'undefined'  )&& typeof data['*rowGUID'] != 'undefined') _val = '_temporaryValue_' + data['*rowGUID']; return _val;}},
+	listVariableName: 'CUSTOMERLIST',
+	listVariableNameTrueCase: 'CUSTOMERLIST',
+	_hostComponentId: 'DLG1',
+	_includeCRC: false,
+	allParentLists: [],
+	__flagPersist: false,
+	onBeforeUpdateRow: function(index,data){;},
+	onUpdateRow: function(index,data){;},
+	onBeforeAddRows: function(data,info){;},
+	onAddRows: function(data,info){;},
+	onBeforeRemoveRows: function(rows){;},
+	onRemoveRows: function(rows){;},
+	onListDraw: function(data,startIndex) {
+if(A5.flags.isMobile) $e.add(this.contId+'.CONTENT','abstractdown',function(e) {$e.preventDefault(e);});},
+	childLists: [],
+	_populateAllChildLists: function() { },
+	onSelect: function() {DLG1_DlgObj._listRowSelect('CUSTOMERLIST');
+;
+this._selectedRow = this.selection[0];},
+	onClick: function() {
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERFORM');
+DLG1_DlgObj._listSystemOnClick('CUSTOMERLIST',this.selection[0]);},
+	layouts: {
+		Default: {
+			type: 'template',
+			item: {
+			},
+			template: [
+				'<div style="display: table; width: 100%;">',
+				'\t<div style="display: table-cell; width: 60px; text-align: left; vertical-align: top;">',
+				'\t\t<span id="DLG1.CUSTOMERLIST.IMAGETHUMBNAIL.I.{*dataRow}"><img id="DLG1.CUSTOMERLIST.IMAGETHUMBNAIL.IMG.{*dataRow}"   src="{ImageThumbnail}" /></span>',
+				'\t</div>',
+				'\t<div style="display: table-cell;">',
+				'\t\t<div class="iOSListItemLabelContext" style="float: right;"><span id="DLG1.CUSTOMERLIST.CUSTOMERID.I.{*dataRow}">{CustomerID}</span></div>',
+				'\t\t<div class="iOSListItemLabelMain"><span id="DLG1.CUSTOMERLIST.CONTACTNAME.I.{*dataRow}">{ContactName}</span></div>',
+				'\t\t<div class="iOSListItemLabelSub"><span id="DLG1.CUSTOMERLIST.COMPANYNAME.I.{*dataRow}">{CompanyName}</span></div>',
+				'\t\t<div class="iOSListItemContent">',
+				'\t\t\t<span id="DLG1.CUSTOMERLIST.ADDRESS.I.{*dataRow}">{Address}</span><br/>',
+				'\t\t\t<span id="DLG1.CUSTOMERLIST.CITY.I.{*dataRow}">{City}</span> <span id="DLG1.CUSTOMERLIST.COUNTRY.I.{*dataRow}">{Country}</span>',
+				'\t\t\t',
+				'\t\t</div>',
+				'\t</div>',
+				'\t\t\t',
+				'\t',
+				'\t<div style="display: table-cell; width: 40px; text-align: right; vertical-align: middle;">',
+				'\t\t<img src="css/iOS/ListNavSubtle.png" />',
+				'\t</div>',
+				'</div>'			
+]
+		}
+	},
+	content: {
+		header: {
+			show: false
+		},
+		footer: {
+			show: false
+		}
+	},
+	systemEvents: {
+		onTap: function(e) {},
+		afterAjaxCallback: function(e) {},
+		afterClientSideFilter: function(e) {},
+		beforeServerSideSort: function(e) {},
+		afterServerSideSort: function(e) {},
+		onSwipe: function(e) {},
+		onScroll: function(e) {},
+		onPullRelease: function(e) {},
+		onPull: function(e) {},
+		onPullEnd: function(e) {},
+		afterSearchComplete: function(e) {},
+		beforeSearch: function(e) {},
+		onSearchResultTooLarge: function(e) {},
+		onSearchResultTooLargeForLocalStorage: function(e) {},
+		onBeforePersistToLocalStorage: function(e) {},
+		onPersistToLocalStorage: function(e) {},
+		onRestoreFromLocalStorage: function(e) {},
+		afterRenderComplete: function(e) {},
+		beforeFetchMore: function(e) {},
+		afterFetchMore: function(e) {},
+		beforePageNavigate: function(e) {},
+		afterPageNavigate: function(e) {},
+		beforeRefreshRow: function(e) {},
+		afterRefreshRow: function(e) {},
+		afterServerSideSummaryCompute: function(summary) {},
+		_afterAjaxCallback: function() {this._refreshStateMessages();}
+	},
+	_clientsideSummary: [],
+	computeClientSideSummaryValues: function(e) {},
+	_executeEvent: function(event,obj) { 
+	return DLG1_DlgObj._list_executeEvent('CUSTOMERLIST',event,obj);
+}
+,
+	_selectAll: function() {
+	var v = this._values;
+	var v2 = [].concat(v);
+	this.setValue(v2,false);
+}
+,
+	searchList: function() { 
+	if(this._searchPartStyle == 'querybyform') { 
+		if(this._dvmode != 'search') return false;
+	}
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else {
+			if(this._dataSourceType.toLowerCase() == 'sql') {
+				mode = 'serverside';
+			} else { 
+				mode = 'clientside';
+			}
+		}
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'search', searchWhere: mode, listIsDirty: flagDirty});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._searchListServerSide(obj);
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilter();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'search', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_searchListServerSide: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var _d={};
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	if(flagDirty) { 
+		alert('Can\'t execute server-side search because List has edits that have not yet been synchronized.');
+		return false;
+	}
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	_data = _data + '&' + A5.ajax.buildURLParam('__searchOptions',JSON.stringify(obj));
+	this.filter = false;
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPart','',_data);
+}
+,
+	clearSearchList: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else mode = 'serverside';
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'clear', searchWhere: mode});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._clearSearchListServerSide();
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilterClear();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'clear', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_clearSearchListServerSide: function() { 
+	var _d={};
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPartClear','',_data);
+}
+,
+	_str: function(txt) {
+	txt = txt.replace("'","\\'");
+	txt = '\'' + txt + '\'';
+	return txt;
+}
+,
+	_QBF: function(txt) { 
+	var o = {};
+	o.v2 = '';
+	o.v1 = txt;
+	o.flag = false;
+	if(txt.indexOf('>=') >= 0) {
+		o.op = '>=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('<=') >= 0 ) { 
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('>') >= 0 ) {
+		o.op = '>';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('<') >= 0)  { 
+		o.op = '<';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('..') == 0)  {
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if ( txt.indexOf('..', txt.length - '..'.length) !== -1 ) { 
+		//ends with ..
+		o.op = '>=';
+		txt = txt.split('..')
+		o.v1 = txt[0];
+		o.flag = true;
+	} else if (txt.indexOf('..') > 0 ) {
+		o.op = 'between'
+		txt = txt.split('..');
+		o.v1 = txt[0];
+		o.v2 = txt[1];
+		o.flag = true;
+	}
+	return o;
+}
+,
+	_match: function(data,field,val,obj) { 
+	var flagKeyword = false;
+	if(typeof obj.flagKeyword != 'undefined') flagKeyword = obj.flagKeyword;
+	if(flagKeyword) { 
+		var obj_i = this._searchFieldOptions[field.toUpperCase()];
+		this._setSearchOps(obj,obj_i);
+	}
+	var _d = '';
+	var _v = val;
+	var flagC = false;
+	if(obj.type == 'c') {
+		flagC = true;
+		if(!obj.caseSensitive) _v = _v.toLowerCase();
+	} else { 
+		//non mumeric searches are only mode 1 or -1
+		if(obj.mode > 1) obj.mode = 1;
+		if(obj.mode < -1) obj.mode = -1;
+	}
+	var flag = false;
+	obj.usesQBFOperator = false;
+	if(obj.qbf) { 
+		_v = _v.split(',');
+	} else {
+		_v = [_v];
+	}
+	var o = {}
+	var r = '';
+	for(var i = 0; i < _v.length; i++) { 
+		if(obj.qbf) {
+			o = this._QBF(_v[i]);
+		} else {
+			o.flag = false;
+			o.v1 = _v[i];
+			o.v2 = '';
+		}
+		if(typeof data[field] != 'undefined') {
+			if(data[field] != null) { 
+				_d = data[field];
+				if(obj.type == 'n') { 
+					o.v1 = Number(o.v1);
+					o.v2 = Number(o.v2);
+					_d = Number(_d);
+				} else if (obj.type == 'l') { 
+					o.v1 = $u.s.toBool(o.v1);
+					o.v2 = $u.s.toBool(o.v2);
+					_d = $u.s.toBool(_d);
+				} else if (obj.type == 'd') { 
+					o.v1 = A5.stringToDate(o.v1,obj.dateFormat);
+					o.v2 = A5.stringToDate(o.v2,obj.dateFormat);
+					if(typeof _d == 'string') _d = A5.stringToDate(_d,obj.dateFormat);
+					if(o.v1 != '' && o.v1 != null ) o.v1 = o.v1.getTime();
+					if(o.v2 != '' && o.v2 != null ) o.v2 = o.v2.getTime();
+					if(_d != '' && _d != null ) _d = _d.getTime();
+				}
+				if(flagC) {if(!obj.caseSensitive && typeof _d == 'string') _d = _d.toLowerCase();}
+				if(o.flag) { 
+					//has qbf operators
+					if(o.op == 'between') {
+						if(flagC) {
+							if(_d.substr(0,o.v1.length) >= o.v1 && _d.substr(0,o.v2.length) <= o.v2 ) flag = true;
+						} else { 
+							if(_d >= o.v1 && _d <= o.v2 && (typeof _d == typeof o.v1)  ) flag = true;
+						}
+					} else { 
+						if(flagC) _d = _d.substr(0,o.v1.length)
+						if(o.op == '>=') if( _d >= o.v1) flag = true;
+						if(o.op == '<=') if( _d <= o.v1) flag = true;
+						if(o.op == '>') if(_d > o.v1) flag = true;
+						if(o.op == '<') if(_d < o.v1) flag = true;
+					}
+				} else { 
+					if(obj.mode == 1 || obj.mode == -1 ) {
+						if(obj.mode == 1) if(_d == o.v1) flag = true;; //match
+						if(obj.mode == -1) if(!(_d == o.v1)) flag = true;; //match
+					} else if (obj.mode == 2 || obj.mode == -2) { 
+						if(obj.mode == 2) if(_d.indexOf(o.v1) > -1) flag = true; //contains
+						if(obj.mode == -2) if(!(_d.indexOf(o.v1) > -1)) flag = true;
+					} else if (obj.mode == 3 || obj.mode == -3) { 
+						if(obj.mode == 3) if(_d.indexOf(o.v1) == 0) flag = true; //starts with
+						if(obj.mode == -3) if(!(_d.indexOf(o.v1) == 0)) flag = true; //starts with
+					}
+				}
+			}
+		}
+	}
+	return flag;
+}
+,
+	_setSearchOps: function(obj,obj_i) { 
+	obj.mode = obj_i.option;
+	obj.qbf = obj_i.qbf;
+	obj.type = obj_i.type;
+	//obj.treatAs = obj_i.treatAs;
+}
+,
+	_searchPartSubmit_clientSideFilter: function() { 
+	if(!this._searchPartHas) return true;
+	//_searchPartStyle: 'individualcontrols'
+	if(this._searchPartStyle == 'singlekeywordcontrol') { 
+		var searchFor = DLG1_DlgObj.getValue(this._keywordSearchControl);
+		var arr = this._keywordSearchFields;
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		//obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 1;
+		obj.flagKeyword = true;
+		var objStr = JSON.stringify(obj)
+		for(var i = 0; i < arr.length; i++) { 
+			expn_i = 'this._match(data,' +this._str(arr[i]) + ',' + this._str(searchFor) + ','+objStr+')';
+			expn.push(expn_i);
+		}
+		expn = expn.join('||');
+		//alert(expn);
+	} else if ( this._searchPartStyle == 'individualcontrols' || this._searchPartStyle == 'querybyform'  ) { 
+		var map = this._searchPart.fieldMap;
+		var val = '';
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 2;
+		//var objStr = JSON.stringify(obj)
+		var ac = [];
+		var aco = {};
+		if(this._searchPartStyle == 'individualcontrols') {
+			for(var i = 0; i < map.length; i++) { 
+				val = DLG1_DlgObj.getValue(map[i].control);
+				if(val != '') {
+					obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+					this._setSearchOps(obj,obj_i);
+					expn_i = 'this._match(data,' +this._str(map[i].field) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+					expn.push(expn_i);
+				}
+			}
+		} else if (this._searchPartStyle == 'querybyform' ) { 
+			var controlName = '';
+			for(var i = 0; i < this._listFields.length; i++) { 
+				controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+				if(controlName != '') {
+					val = DLG1_DlgObj.getValue(controlName);
+					if(val != '') {
+						obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+						this._setSearchOps(obj,obj_i);
+						expn_i = 'this._match(data,' +this._str(this._listFields[i].name) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+						expn.push(expn_i);
+						aco.control = controlName;
+						aco.value = val;
+						ac.push(aco);
+					}
+				}
+			}
+			this.__queryByFormValues = ac;
+			DLG1_DlgObj._setDVClean(this);
+		}	
+		expn = expn.join(' && ');
+	} 
+	//alert(expn);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = expn;
+	}
+	//user did not fill in any search fields
+	if(expn == '') return true;
+	var fnTxt = 'if(' + expn + ') {return true;} else { return false;}'
+	var searchFunction = new Function('data',fnTxt);
+	this.setFilter(searchFunction);
+	if(this._rData.length > 0) this.setValue(0);
+}
+,
+	_searchPartSubmit_clientSideFilterClear: function() { 
+if(!this._searchPartHas) return true;
+	this.setFilter(false);
+	var map = this._searchPart.fieldMap;
+	var val = '';
+	var od = DLG1_DlgObj.originalValues[0];
+	for(var i = 0; i < map.length; i++) {
+		var val = od[map[i].control.toUpperCase()];
+		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
+	}
+	this.setFilter(false);
+	delete this.__queryByFormValues;
+	DLG1_DlgObj._setDVClean(this);
+	if(this._data.length > 0) this.setValue(0);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = '';
+	}
+}
+,
+	detailViewIsDirty: function() { return false; },
+	populateUXControls: function() { return true; },
+	listIsDirty: function() { return false; },
+	lookupValue: function(key,name,keyValue) {	var _d = this._data;
+	var indx = A5FindPropInArray(_d,key,keyValue);
+	var rv = '';
+	if(indx >=0) {
+		if(name == '__rowData__') return _d[indx];
+		rv =  _d[indx][name];
+	} else {
+		//null out all properties in row
+		var _d2 = {};
+		if(typeof _d[0] == 'undefined') { return {}} ;
+		for(var n in _d[0]) {
+			_d2[n] = '&nbsp;';
+		}
+		rv = _d2;
+	}
+	return rv;
+}
+,
+	allowNullSelection: false,
+	refreshChildLists: function() {DLG1_DlgObj._listRefreshCascadingLists('CUSTOMERLIST'); },
+	rowExpander: function(rowNumber) { 
+	var mode = typeof arguments[2] != 'undefined' ? arguments[2] : 'toggle';
+	if(typeof rowNumber == 'undefined' || rowNumber == '' ) {
+		rowNumber = this.selection[0];
+		if(typeof rowNumber == 'undefined') return false;
+	}
+	var animObj = typeof arguments[1] != 'undefined' ? arguments[1] : {};
+	var ele = $(this._hostComponentId + '.' + this.listVariableName + '.ROWEXPANDER.' + rowNumber);
+	if(ele) {
+		if(mode == 'toggle') A5.u.element.toggle(ele,animObj);
+		if(mode == 'show') A5.u.element.show(ele,animObj);
+		if(mode == 'hide') A5.u.element.hide(ele,animObj);
+	}
+}
+,
+	afterClientSideSummaryCompute: function(csSummary) { },
+	selectCurrentLayout: function(name) { 
+var pl = this.layouts[name];
+if(typeof pl == 'undefined') return false;
+this.setLayout(name);
+if(pl.type == 'column') {
+	this.columnLayout.header.show = this.layouts[name].showColumnTitles; 
+	this.refresh();
+}
+},
+	onFilter: function() { 	var e = {}; 
+	e.rowCount = this._values.length;  
+	var ele = $('DLG1.__listId__.RECORDCOUNT'); 
+	if(ele) {ele.innerHTML = e.rowCount;}; 
+	if(this.persistToStorage) { this.persistToStorage({});} 
+	(function(e) {   })(e);
+}
+,
+	serverSideSort: function(column) {
+var e = {};
+e.column = column;
+var result = this.systemEvents.beforeServerSideSort(e);
+if(result == false) return false;
+var obj = {};
+obj.cmd = 'sort';
+obj.column = column;
+obj.layoutName = this.layout;
+obj.listState = this._state;
+var data = '_listId=CUSTOMERLIST&' + A5.ajax.buildURLParam('_cmdObj',$u.o.toJSON(obj));
+DLG1_DlgObj.ajaxCallback('','','system:listServerSideSort','',data);
+},
+	filterListClientSide: function(searchFor) {
+//var result = this.systemEvents.beforeClientSideFilter();
+//if(result == false) return false;
+if(searchFor != '') {
+	//fixes bug in Chrome when searching on dates strings that use forward slashes
+	searchFor = searchFor.replace(/\//g,'\\/');
+	this.setFilter({'CustomerID': RegExp('' + searchFor,'i'), 'CompanyName': RegExp('' + searchFor,'i'), 'ContactName': RegExp('' + searchFor,'i'), 'Address': RegExp('' + searchFor,'i'), 'City': RegExp('' + searchFor,'i'), 'Country': RegExp('' + searchFor,'i')});
+} else this.setFilter(false);
+var rowCount = this._values.length;
+//var e = {};
+//e.rowCount = rowCount;
+//this.systemEvents.afterClientSideFilter(e);
+var ele = $('DLG1.CUSTOMERLIST.RECORDCOUNT');
+if(ele) ele.innerHTML = rowCount;
+}
+,
+	scrollToClosestValue: function(val) { 	
+	if(typeof val != 'string') val = val.join('');
+	var flagCI = typeof arguments[1] != 'undefined' ? arguments[1] : false;
+	var pos = typeof arguments[2] != 'undefined' ? arguments[2] : 'top';
+	var anim = typeof arguments[3] != 'undefined' ? arguments[3] : {}
+	var _d = this._rData;
+	var len = val.length;
+	var _d2;
+	var i2 = -1;
+	if(flagCI) val = val.toLowerCase();
+	for(var i = 0 ; i < _d.length; i++) {
+		i2 = i;
+		_d2 = String(_d[i]['*value']);
+		_d2 = _d2.substr(0,len);
+		_d2 = $u.s.pad(_d2,len,' ','l');
+		if(flagCI) _d2 = _d2.toLowerCase();
+		if(val <= _d2){
+			 break;
+		}
+	}
+	if(i2 > -1) { 
+		this.scrollToItem(i2,{mode: pos, animation: anim});
+	}
+}
+,
+	_refreshStateMessages: function() {
+	var ele = '';
+	ele = $('DLG1.CUSTOMERLIST.PAGENUMBER');
+	if(ele) ele.innerHTML = this._state.page;
+	ele = $('DLG1.CUSTOMERLIST.PAGECOUNT');
+	if(ele) ele.innerHTML = this._state.pageCount;
+	ele = $('DLG1.CUSTOMERLIST.PAGECOUNT.PAGESELECTOR');
+	if(ele) ele.innerHTML = this._state.pageCount;	
+	ele = $('DLG1.CUSTOMERLIST.LISTSTATE');
+	if(ele) {
+		var listState = $u.o.toJSON(this._state);
+		ele.innerHTML = listState;
+	}
+	//navigation buttons	
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_NEXT.CUSTOMERLIST'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_LAST.CUSTOMERLIST'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_FIRST.CUSTOMERLIST'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_PREV.CUSTOMERLIST'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0 ) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = $('DLG1.V.R1.A5SYSTEM_LIST_PAGESELECTOR_CUSTOMERLIST');
+	if(ele) {
+		var data = this._recordNavigatorLinks;
+		if(data) A5.form.populateSelect(ele,this._state.page,data,true);
+	}
+}
+,
+	_getRoute: function() { 
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode == 'rowNumber') obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	else obj.push({list: this.listVariableName, row: this.getData(this.selection[0]).__primaryKey});
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_setRoute: function(route) { 
+	if(typeof route == 'undefined') { 
+		route = this.__currentRoute;
+		if(typeof route == 'undefined') return false;
+	}
+	var lObj = '';
+	var row = '';
+	for(var i = 0; i < route.length; i++) {
+		lObj = window[this._hostComponentId + '_DlgObj'].getControl(route[i].list);
+		row = route[i].row;
+		var flag = typeof this._restoringList != 'undefined' ? !this._restoringList : true;
+		if(typeof row != 'undefined') {
+			var rowFixed = '';
+			rowFixed = lObj._dataMap.indexOf(route[i].row);
+			lObj.setValue(rowFixed,flag);
+			if(this._clearServerSideErrors) this._clearServerSideErrors();
+			if(this._showServerSideErrors) this._showServerSideErrors();
+			if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+		}
+	}
+}
+,
+	_useServerSideSyncLog: false
+};
+DLG1_DlgObj._listViewSettings['MENULIST'] = {
+	_dataSourceType: 'Static',
+	_listFields: [
+	{
+		name: 'menuChoices',
+		defaultValue: 'return this._controlDefaultValueForListField(\'menuChoices\');'
+	}
+],
+	_searchPartHas: false,
+	_mediaFields: [],
+	_mediaTypes: {
+},
+	_dvmode: 'enter',
+	_hasDetailView: false,
+	theme: 'iOS',
+	scroll: {
+		axis: 'both',
+		indicator: {
+			show: true,
+			h: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				left: '0px',
+				right: '0px'
+			},
+			v: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				top: '0px',
+				bottom: '0px'
+			}
+		},
+		momentum: {
+			allow: true
+		},
+		pull: {
+			y: 'auto',
+			x: 'auto'
+		}
+	},
+	layout: 'Default',
+	listVariableName: 'MENULIST',
+	listVariableNameTrueCase: 'MENULIST',
+	_hostComponentId: 'DLG1',
+	_includeCRC: false,
+	allParentLists: [],
+	__flagPersist: false,
+	onBeforeUpdateRow: function(index,data){;},
+	onUpdateRow: function(index,data){;},
+	onBeforeAddRows: function(data,info){;},
+	onAddRows: function(data,info){;},
+	onBeforeRemoveRows: function(rows){;},
+	onRemoveRows: function(rows){;},
+	onListDraw: function(data,startIndex) {
+if(A5.flags.isMobile) $e.add(this.contId+'.CONTENT','abstractdown',function(e) {$e.preventDefault(e);});},
+	childLists: [],
+	_populateAllChildLists: function() { },
+	onSelect: function() {DLG1_DlgObj._listRowSelect('MENULIST');
+;
+this._selectedRow = this.selection[0];},
+	onClick: function() {
+callMenuItem(this.selectionData[0].menuChoices);
+DLG1_DlgObj._listSystemOnClick('MENULIST',this.selection[0]);},
+	layouts: {
+		Default: {
+			type: 'template',
+			item: {
+			},
+			template: [
+				'<span id="DLG1.MENULIST.MENUCHOICES.I.{*dataRow}">{menuChoices}</span>'			
+]
+		}
+	},
+	content: {
+		header: {
+			show: false
+		},
+		footer: {
+			show: false
+		}
+	},
+	systemEvents: {
+		onTap: function(e) {},
+		afterAjaxCallback: function(e) {},
+		afterClientSideFilter: function(e) {},
+		beforeServerSideSort: function(e) {},
+		afterServerSideSort: function(e) {},
+		onSwipe: function(e) {},
+		onScroll: function(e) {},
+		onPullRelease: function(e) {},
+		onPull: function(e) {},
+		onPullEnd: function(e) {},
+		afterSearchComplete: function(e) {},
+		beforeSearch: function(e) {},
+		onSearchResultTooLarge: function(e) {},
+		onSearchResultTooLargeForLocalStorage: function(e) {},
+		onBeforePersistToLocalStorage: function(e) {},
+		onPersistToLocalStorage: function(e) {},
+		onRestoreFromLocalStorage: function(e) {},
+		afterRenderComplete: function(e) {},
+		beforeFetchMore: function(e) {},
+		afterFetchMore: function(e) {},
+		beforePageNavigate: function(e) {},
+		afterPageNavigate: function(e) {},
+		beforeRefreshRow: function(e) {},
+		afterRefreshRow: function(e) {},
+		afterServerSideSummaryCompute: function(summary) {},
+		_afterAjaxCallback: function() {this._refreshStateMessages();}
+	},
+	_clientsideSummary: [],
+	computeClientSideSummaryValues: function(e) {},
+	_executeEvent: function(event,obj) { 
+	return DLG1_DlgObj._list_executeEvent('MENULIST',event,obj);
+}
+,
+	_selectAll: function() {
+	var v = this._values;
+	var v2 = [].concat(v);
+	this.setValue(v2,false);
+}
+,
+	searchList: function() { 
+	if(this._searchPartStyle == 'querybyform') { 
+		if(this._dvmode != 'search') return false;
+	}
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else {
+			if(this._dataSourceType.toLowerCase() == 'sql') {
+				mode = 'serverside';
+			} else { 
+				mode = 'clientside';
+			}
+		}
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'search', searchWhere: mode, listIsDirty: flagDirty});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._searchListServerSide(obj);
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilter();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'search', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_searchListServerSide: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var _d={};
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	if(flagDirty) { 
+		alert('Can\'t execute server-side search because List has edits that have not yet been synchronized.');
+		return false;
+	}
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	_data = _data + '&' + A5.ajax.buildURLParam('__searchOptions',JSON.stringify(obj));
+	this.filter = false;
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPart','',_data);
+}
+,
+	clearSearchList: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else mode = 'serverside';
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'clear', searchWhere: mode});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._clearSearchListServerSide();
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilterClear();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'clear', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_clearSearchListServerSide: function() { 
+	var _d={};
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPartClear','',_data);
+}
+,
+	_str: function(txt) {
+	txt = txt.replace("'","\\'");
+	txt = '\'' + txt + '\'';
+	return txt;
+}
+,
+	_QBF: function(txt) { 
+	var o = {};
+	o.v2 = '';
+	o.v1 = txt;
+	o.flag = false;
+	if(txt.indexOf('>=') >= 0) {
+		o.op = '>=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('<=') >= 0 ) { 
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('>') >= 0 ) {
+		o.op = '>';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('<') >= 0)  { 
+		o.op = '<';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('..') == 0)  {
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if ( txt.indexOf('..', txt.length - '..'.length) !== -1 ) { 
+		//ends with ..
+		o.op = '>=';
+		txt = txt.split('..')
+		o.v1 = txt[0];
+		o.flag = true;
+	} else if (txt.indexOf('..') > 0 ) {
+		o.op = 'between'
+		txt = txt.split('..');
+		o.v1 = txt[0];
+		o.v2 = txt[1];
+		o.flag = true;
+	}
+	return o;
+}
+,
+	_match: function(data,field,val,obj) { 
+	var flagKeyword = false;
+	if(typeof obj.flagKeyword != 'undefined') flagKeyword = obj.flagKeyword;
+	if(flagKeyword) { 
+		var obj_i = this._searchFieldOptions[field.toUpperCase()];
+		this._setSearchOps(obj,obj_i);
+	}
+	var _d = '';
+	var _v = val;
+	var flagC = false;
+	if(obj.type == 'c') {
+		flagC = true;
+		if(!obj.caseSensitive) _v = _v.toLowerCase();
+	} else { 
+		//non mumeric searches are only mode 1 or -1
+		if(obj.mode > 1) obj.mode = 1;
+		if(obj.mode < -1) obj.mode = -1;
+	}
+	var flag = false;
+	obj.usesQBFOperator = false;
+	if(obj.qbf) { 
+		_v = _v.split(',');
+	} else {
+		_v = [_v];
+	}
+	var o = {}
+	var r = '';
+	for(var i = 0; i < _v.length; i++) { 
+		if(obj.qbf) {
+			o = this._QBF(_v[i]);
+		} else {
+			o.flag = false;
+			o.v1 = _v[i];
+			o.v2 = '';
+		}
+		if(typeof data[field] != 'undefined') {
+			if(data[field] != null) { 
+				_d = data[field];
+				if(obj.type == 'n') { 
+					o.v1 = Number(o.v1);
+					o.v2 = Number(o.v2);
+					_d = Number(_d);
+				} else if (obj.type == 'l') { 
+					o.v1 = $u.s.toBool(o.v1);
+					o.v2 = $u.s.toBool(o.v2);
+					_d = $u.s.toBool(_d);
+				} else if (obj.type == 'd') { 
+					o.v1 = A5.stringToDate(o.v1,obj.dateFormat);
+					o.v2 = A5.stringToDate(o.v2,obj.dateFormat);
+					if(typeof _d == 'string') _d = A5.stringToDate(_d,obj.dateFormat);
+					if(o.v1 != '' && o.v1 != null ) o.v1 = o.v1.getTime();
+					if(o.v2 != '' && o.v2 != null ) o.v2 = o.v2.getTime();
+					if(_d != '' && _d != null ) _d = _d.getTime();
+				}
+				if(flagC) {if(!obj.caseSensitive && typeof _d == 'string') _d = _d.toLowerCase();}
+				if(o.flag) { 
+					//has qbf operators
+					if(o.op == 'between') {
+						if(flagC) {
+							if(_d.substr(0,o.v1.length) >= o.v1 && _d.substr(0,o.v2.length) <= o.v2 ) flag = true;
+						} else { 
+							if(_d >= o.v1 && _d <= o.v2 && (typeof _d == typeof o.v1)  ) flag = true;
+						}
+					} else { 
+						if(flagC) _d = _d.substr(0,o.v1.length)
+						if(o.op == '>=') if( _d >= o.v1) flag = true;
+						if(o.op == '<=') if( _d <= o.v1) flag = true;
+						if(o.op == '>') if(_d > o.v1) flag = true;
+						if(o.op == '<') if(_d < o.v1) flag = true;
+					}
+				} else { 
+					if(obj.mode == 1 || obj.mode == -1 ) {
+						if(obj.mode == 1) if(_d == o.v1) flag = true;; //match
+						if(obj.mode == -1) if(!(_d == o.v1)) flag = true;; //match
+					} else if (obj.mode == 2 || obj.mode == -2) { 
+						if(obj.mode == 2) if(_d.indexOf(o.v1) > -1) flag = true; //contains
+						if(obj.mode == -2) if(!(_d.indexOf(o.v1) > -1)) flag = true;
+					} else if (obj.mode == 3 || obj.mode == -3) { 
+						if(obj.mode == 3) if(_d.indexOf(o.v1) == 0) flag = true; //starts with
+						if(obj.mode == -3) if(!(_d.indexOf(o.v1) == 0)) flag = true; //starts with
+					}
+				}
+			}
+		}
+	}
+	return flag;
+}
+,
+	_setSearchOps: function(obj,obj_i) { 
+	obj.mode = obj_i.option;
+	obj.qbf = obj_i.qbf;
+	obj.type = obj_i.type;
+	//obj.treatAs = obj_i.treatAs;
+}
+,
+	_searchPartSubmit_clientSideFilter: function() { 
+	if(!this._searchPartHas) return true;
+	//_searchPartStyle: 'individualcontrols'
+	if(this._searchPartStyle == 'singlekeywordcontrol') { 
+		var searchFor = DLG1_DlgObj.getValue(this._keywordSearchControl);
+		var arr = this._keywordSearchFields;
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		//obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 1;
+		obj.flagKeyword = true;
+		var objStr = JSON.stringify(obj)
+		for(var i = 0; i < arr.length; i++) { 
+			expn_i = 'this._match(data,' +this._str(arr[i]) + ',' + this._str(searchFor) + ','+objStr+')';
+			expn.push(expn_i);
+		}
+		expn = expn.join('||');
+		//alert(expn);
+	} else if ( this._searchPartStyle == 'individualcontrols' || this._searchPartStyle == 'querybyform'  ) { 
+		var map = this._searchPart.fieldMap;
+		var val = '';
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 2;
+		//var objStr = JSON.stringify(obj)
+		var ac = [];
+		var aco = {};
+		if(this._searchPartStyle == 'individualcontrols') {
+			for(var i = 0; i < map.length; i++) { 
+				val = DLG1_DlgObj.getValue(map[i].control);
+				if(val != '') {
+					obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+					this._setSearchOps(obj,obj_i);
+					expn_i = 'this._match(data,' +this._str(map[i].field) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+					expn.push(expn_i);
+				}
+			}
+		} else if (this._searchPartStyle == 'querybyform' ) { 
+			var controlName = '';
+			for(var i = 0; i < this._listFields.length; i++) { 
+				controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+				if(controlName != '') {
+					val = DLG1_DlgObj.getValue(controlName);
+					if(val != '') {
+						obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+						this._setSearchOps(obj,obj_i);
+						expn_i = 'this._match(data,' +this._str(this._listFields[i].name) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+						expn.push(expn_i);
+						aco.control = controlName;
+						aco.value = val;
+						ac.push(aco);
+					}
+				}
+			}
+			this.__queryByFormValues = ac;
+			DLG1_DlgObj._setDVClean(this);
+		}	
+		expn = expn.join(' && ');
+	} 
+	//alert(expn);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = expn;
+	}
+	//user did not fill in any search fields
+	if(expn == '') return true;
+	var fnTxt = 'if(' + expn + ') {return true;} else { return false;}'
+	var searchFunction = new Function('data',fnTxt);
+	this.setFilter(searchFunction);
+	if(this._rData.length > 0) this.setValue(0);
+}
+,
+	_searchPartSubmit_clientSideFilterClear: function() { 
+if(!this._searchPartHas) return true;
+	this.setFilter(false);
+	var map = this._searchPart.fieldMap;
+	var val = '';
+	var od = DLG1_DlgObj.originalValues[0];
+	for(var i = 0; i < map.length; i++) {
+		var val = od[map[i].control.toUpperCase()];
+		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
+	}
+	this.setFilter(false);
+	delete this.__queryByFormValues;
+	DLG1_DlgObj._setDVClean(this);
+	if(this._data.length > 0) this.setValue(0);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = '';
+	}
+}
+,
+	detailViewIsDirty: function() { return false; },
+	populateUXControls: function() { return true; },
+	listIsDirty: function() { return false; },
+	lookupValue: function(key,name,keyValue) {	var _d = this._data;
+	var indx = A5FindPropInArray(_d,key,keyValue);
+	var rv = '';
+	if(indx >=0) {
+		if(name == '__rowData__') return _d[indx];
+		rv =  _d[indx][name];
+	} else {
+		//null out all properties in row
+		var _d2 = {};
+		if(typeof _d[0] == 'undefined') { return {}} ;
+		for(var n in _d[0]) {
+			_d2[n] = '&nbsp;';
+		}
+		rv = _d2;
+	}
+	return rv;
+}
+,
+	allowNullSelection: true,
+	refreshChildLists: function() {DLG1_DlgObj._listRefreshCascadingLists('MENULIST'); },
+	rowExpander: function(rowNumber) { 
+	var mode = typeof arguments[2] != 'undefined' ? arguments[2] : 'toggle';
+	if(typeof rowNumber == 'undefined' || rowNumber == '' ) {
+		rowNumber = this.selection[0];
+		if(typeof rowNumber == 'undefined') return false;
+	}
+	var animObj = typeof arguments[1] != 'undefined' ? arguments[1] : {};
+	var ele = $(this._hostComponentId + '.' + this.listVariableName + '.ROWEXPANDER.' + rowNumber);
+	if(ele) {
+		if(mode == 'toggle') A5.u.element.toggle(ele,animObj);
+		if(mode == 'show') A5.u.element.show(ele,animObj);
+		if(mode == 'hide') A5.u.element.hide(ele,animObj);
+	}
+}
+,
+	afterClientSideSummaryCompute: function(csSummary) { },
+	selectCurrentLayout: function(name) { 
+var pl = this.layouts[name];
+if(typeof pl == 'undefined') return false;
+this.setLayout(name);
+if(pl.type == 'column') {
+	this.columnLayout.header.show = this.layouts[name].showColumnTitles; 
+	this.refresh();
+}
+},
+	onFilter: function() { 	var e = {}; 
+	e.rowCount = this._values.length;  
+	var ele = $('DLG1.__listId__.RECORDCOUNT'); 
+	if(ele) {ele.innerHTML = e.rowCount;}; 
+	if(this.persistToStorage) { this.persistToStorage({});} 
+	(function(e) {   })(e);
+}
+,
+	serverSideSort: function(column) {
+var e = {};
+e.column = column;
+var result = this.systemEvents.beforeServerSideSort(e);
+if(result == false) return false;
+var obj = {};
+obj.cmd = 'sort';
+obj.column = column;
+obj.layoutName = this.layout;
+obj.listState = this._state;
+var data = '_listId=MENULIST&' + A5.ajax.buildURLParam('_cmdObj',$u.o.toJSON(obj));
+DLG1_DlgObj.ajaxCallback('','','system:listServerSideSort','',data);
+},
+	filterListClientSide: function(searchFor) {
+//var result = this.systemEvents.beforeClientSideFilter();
+//if(result == false) return false;
+if(searchFor != '') {
+	//fixes bug in Chrome when searching on dates strings that use forward slashes
+	searchFor = searchFor.replace(/\//g,'\\/');
+	this.setFilter({'menuChoices': RegExp('' + searchFor,'i')});
+} else this.setFilter(false);
+var rowCount = this._values.length;
+//var e = {};
+//e.rowCount = rowCount;
+//this.systemEvents.afterClientSideFilter(e);
+var ele = $('DLG1.MENULIST.RECORDCOUNT');
+if(ele) ele.innerHTML = rowCount;
+}
+,
+	scrollToClosestValue: function(val) { 	
+	if(typeof val != 'string') val = val.join('');
+	var flagCI = typeof arguments[1] != 'undefined' ? arguments[1] : false;
+	var pos = typeof arguments[2] != 'undefined' ? arguments[2] : 'top';
+	var anim = typeof arguments[3] != 'undefined' ? arguments[3] : {}
+	var _d = this._rData;
+	var len = val.length;
+	var _d2;
+	var i2 = -1;
+	if(flagCI) val = val.toLowerCase();
+	for(var i = 0 ; i < _d.length; i++) {
+		i2 = i;
+		_d2 = String(_d[i]['*value']);
+		_d2 = _d2.substr(0,len);
+		_d2 = $u.s.pad(_d2,len,' ','l');
+		if(flagCI) _d2 = _d2.toLowerCase();
+		if(val <= _d2){
+			 break;
+		}
+	}
+	if(i2 > -1) { 
+		this.scrollToItem(i2,{mode: pos, animation: anim});
+	}
+}
+,
+	_refreshStateMessages: function() {
+	var ele = '';
+	ele = $('DLG1.MENULIST.PAGENUMBER');
+	if(ele) ele.innerHTML = this._state.page;
+	ele = $('DLG1.MENULIST.PAGECOUNT');
+	if(ele) ele.innerHTML = this._state.pageCount;
+	ele = $('DLG1.MENULIST.PAGECOUNT.PAGESELECTOR');
+	if(ele) ele.innerHTML = this._state.pageCount;	
+	ele = $('DLG1.MENULIST.LISTSTATE');
+	if(ele) {
+		var listState = $u.o.toJSON(this._state);
+		ele.innerHTML = listState;
+	}
+	//navigation buttons	
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_NEXT.MENULIST'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_LAST.MENULIST'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_FIRST.MENULIST'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_PREV.MENULIST'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0 ) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = $('DLG1.V.R1.A5SYSTEM_LIST_PAGESELECTOR_MENULIST');
+	if(ele) {
+		var data = this._recordNavigatorLinks;
+		if(data) A5.form.populateSelect(ele,this._state.page,data,true);
+	}
+}
+,
+	_getRoute: function() { 
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode == 'rowNumber') obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	else obj.push({list: this.listVariableName, row: this.getData(this.selection[0]).__primaryKey});
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_setRoute: function(route) { 
+	if(typeof route == 'undefined') { 
+		route = this.__currentRoute;
+		if(typeof route == 'undefined') return false;
+	}
+	var lObj = '';
+	var row = '';
+	for(var i = 0; i < route.length; i++) {
+		lObj = window[this._hostComponentId + '_DlgObj'].getControl(route[i].list);
+		row = route[i].row;
+		var flag = typeof this._restoringList != 'undefined' ? !this._restoringList : true;
+		if(typeof row != 'undefined') {
+			var rowFixed = '';
+			rowFixed = lObj._dataMap.indexOf(route[i].row);
+			lObj.setValue(rowFixed,flag);
+			if(this._clearServerSideErrors) this._clearServerSideErrors();
+			if(this._showServerSideErrors) this._showServerSideErrors();
+			if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+		}
+	}
+}
+,
+	_useServerSideSyncLog: false
+};
+DLG1_DlgObj._listViewData['CUSTOMERLIST'] = A5DataArrayToObject(['CustomerID','CompanyName','ContactName','Address','City','Country','ImageThumbnail','__primaryKey'],[['ALFKI','Alfreds Futterkiste','Maria Anders','Obere Str. 5','Berlin','Germany','a5images/MissingImageSmall2.png','ALFKI'],['ANATR','Ana Trujillo Emparedados y helados','Ana Trujillo','Avda. de la Constitución 113','México D.F.','Mexico','a5images/MissingImageSmall2.png','ANATR'],['ANTON','Antonio Moreno Taquería','Antonio Moreno','Mataderos  2312','México D.F.','Mexico','a5images/MissingImageSmall2.png','ANTON'],['AROUT','Around the Horn','Thomas Hardy','120 Hanover Sq.','London','UK','a5images/MissingImageSmall2.png','AROUT'],['BERGS','Berglunds snabbköp','Christina Berglund','Berguvsvägen  8','Luleå','Sweden','a5images/MissingImageSmall2.png','BERGS'],['BLAUS','Blauer See Delikatessen','Hanna Moos','Forsterstr. 57','Mannheim','Germany','a5images/MissingImageSmall2.png','BLAUS'],['BLONP','Blondel père et fils','Frédérique Citeaux','24, place Kléber','Strasbourg','France','a5images/MissingImageSmall2.png','BLONP'],['BOLID','Bólido Comidas preparadas','Martín Sommer','C/ Araquil, 67','Madrid','Spain','a5images/MissingImageSmall2.png','BOLID'],['BONAP','Bon app\'','Laurence Lebihan','12, rue des Bouchers','Marseille','France','a5images/MissingImageSmall2.png','BONAP'],['BOTTM','Bottom-Dollar Markets','Elizabeth Lincoln','23 Tsawassen Blvd.','Tsawassen','Canada','a5images/MissingImageSmall2.png','BOTTM'],['BSBEV','B\'s Beverages','Victoria Ashworth','Fauntleroy Circus','London','UK','a5images/MissingImageSmall2.png','BSBEV'],['CACTU','Cactus Comidas para llevar','Patricio Simpson','Cerrito 333','Buenos Aires','Argentina','a5images/MissingImageSmall2.png','CACTU'],['CENTC','Centro comercial Moctezuma','Francisco Chang','Sierras de Granada 9993','México D.F.','Mexico','a5images/MissingImageSmall2.png','CENTC'],['CHOPS','Chop-suey Chinese','Yang Wang','Hauptstr. 29','Bern','Switzerland','a5images/MissingImageSmall2.png','CHOPS'],['COMMI','Comércio Mineiro','Pedro Afonso','Av. dos Lusíadas, 23','São Paulo','Brazil','a5images/MissingImageSmall2.png','COMMI'],['CONSH','Consolidated Holdings','Elizabeth Brown','Berkeley Gardens13  Brewery','London','UK','a5images/MissingImageSmall2.png','CONSH'],['DRACD','Drachenblut Delikatessen','Sven Ottlieb','Walserweg 21','Aachen','Germany','a5images/MissingImageSmall2.png','DRACD'],['DUMON','Du monde entier','Janine Labrune','67, rue des Cinquante Otages','Nantes','France','a5images/MissingImageSmall2.png','DUMON'],['EASTC','Eastern Connection','Ann Devon','35 King George','London','UK','a5images/MissingImageSmall2.png','EASTC'],['ERNSH','Ernst Handel','Roland Mendel','Kirchgasse 6','Graz','Austria','a5images/MissingImageSmall2.png','ERNSH'],['FAMIA','Familia Arquibaldo','Aria Cruz','Rua Orós, 92','São Paulo','Brazil','a5images/MissingImageSmall2.png','FAMIA'],['FISSA','FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','C/ Moralzarzal, 86','Madrid','Spain','a5images/MissingImageSmall2.png','FISSA'],['FOLIG','Folies gourmandes','Martine Rancé','184, chaussée de Tournai','Lille','France','a5images/MissingImageSmall2.png','FOLIG'],['FOLKO','Folk och fä HB','Maria Larsson','Åkergatan 24','Bräcke','Sweden','a5images/MissingImageSmall2.png','FOLKO'],['FRANK','Frankenversand','Peter Franken','Berliner Platz 43','München','Germany','a5images/MissingImageSmall2.png','FRANK'],['FRANR','France restauration','Carine Schmitt','54, rue Royale','Nantes','France','a5images/MissingImageSmall2.png','FRANR'],['FRANS','Franchi S.p.A.','Paolo Accorti','Via Monte Bianco 34','Torino','Italy','a5images/MissingImageSmall2.png','FRANS'],['FURIB','Furia Bacalhau e Frutos do Mar','Lino Rodriguez','Jardim das rosas n. 32','Lisboa','Portugal','a5images/MissingImageSmall2.png','FURIB'],['GALED','Galería del gastrónomo','Eduardo Saavedra','Rambla de Cataluña, 23','Barcelona','Spain','a5images/MissingImageSmall2.png','GALED'],['GODOS','Godos Cocina Típica','José Pedro Freyre','C/ Romero, 33','Sevilla','Spain','a5images/MissingImageSmall2.png','GODOS'],['GOURL','Gourmet Lanchonetes','André Fonseca','Av. Brasil, 442','Campinas','Brazil','a5images/MissingImageSmall2.png','GOURL'],['GREAL','Great Lakes Food Market','Howard Snyder','2732 Baker Blvd.','Eugene','USA','a5images/MissingImageSmall2.png','GREAL'],['GROSR','GROSELLA-Restaurante','Manuel Pereira','5ª Ave. Los Palos Grandes','Caracas','Venezuela','a5images/MissingImageSmall2.png','GROSR'],['HANAR','Hanari Carnes','Mario Pontes','Rua do Paço, 67','Rio de Janeiro','Brazil','a5images/MissingImageSmall2.png','HANAR'],['HILAA','HILARIÓN-Abastos','Carlos Hernández','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal','Venezuela','a5images/MissingImageSmall2.png','HILAA'],['HUNGC','Hungry Coyote Import Store','Yoshi Latimer','City Center Plaza\n516 Main St.','Elgin','USA','a5images/MissingImageSmall2.png','HUNGC'],['HUNGO','Hungry Owl All-Night Grocers','Patricia McKenna','8 Johnstown Road','Cork','Ireland','a5images/MissingImageSmall2.png','HUNGO'],['ISLAT','Island Trading','Helen Bennett','Garden House\nCrowther Way','Cowes','UK','a5images/MissingImageSmall2.png','ISLAT'],['KOENE','Königlich Essen','Philip Cramer','Maubelstr. 90','Brandenburg','Germany','a5images/MissingImageSmall2.png','KOENE'],['LACOR','La corne d\'abondance','Daniel Tonini','67, avenue de l\'Europe','Versailles','France','a5images/MissingImageSmall2.png','LACOR'],['LAMAI','La maison d\'Asie','Annette Roulet','1 rue Alsace-Lorraine','Toulouse','France','a5images/MissingImageSmall2.png','LAMAI'],['LAUGB','Laughing Bacchus Wine Cellars','Yoshi Tannamuri','1900 Oak St.','Vancouver','Canada','a5images/MissingImageSmall2.png','LAUGB'],['LAZYK','Lazy K Kountry Store','John Steel','12 Orchestra Terrace','Walla Walla','USA','a5images/MissingImageSmall2.png','LAZYK'],['LEHMS','Lehmanns Marktstand','Renate Messner','Magazinweg 7','Frankfurt a.M.','Germany','a5images/MissingImageSmall2.png','LEHMS'],['LETSS','Let\'s Stop N Shop','Jaime Yorres','87 Polk St.\nSuite 5','San Francisco','USA','a5images/MissingImageSmall2.png','LETSS'],['LILAS','LILA-Supermercado','Carlos González','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto','Venezuela','a5images/MissingImageSmall2.png','LILAS'],['LINOD','LINO-Delicateses','Felipe Izquierdo','Ave. 5 de Mayo Porlamar','I. de Margarita','Venezuela','a5images/MissingImageSmall2.png','LINOD'],['LONEP','Lonesome Pine Restaurant','Fran Wilson','89 Chiaroscuro Rd.','Portland','USA','a5images/MissingImageSmall2.png','LONEP'],['MAGAA','Magazzini Alimentari Riuniti','Giovanni Rovelli','Via Ludovico il Moro 22','Bergamo','Italy','a5images/MissingImageSmall2.png','MAGAA'],['MAISD','Maison Dewey','Catherine Dewey','Rue Joseph-Bens 532','Bruxelles','Belgium','a5images/MissingImageSmall2.png','MAISD'],['MEREP','Mère Paillarde','Jean Fresnière','43 rue St. Laurent','Montréal','Canada','a5images/MissingImageSmall2.png','MEREP'],['MORGK','Morgenstern Gesundkost','Alexander Feuer','Heerstr. 22','Leipzig','Germany','a5images/MissingImageSmall2.png','MORGK'],['NORTS','North/South','Simon Crowther','South House\n300 Queensbridge','London','UK','a5images/MissingImageSmall2.png','NORTS'],['OCEAN','Océano Atlántico Ltda.','Yvonne Moncada','Ing. Gustavo Moncada 8585\nPiso 20-A','Buenos Aires','Argentina','a5images/MissingImageSmall2.png','OCEAN'],['OLDWO','Old World Delicatessen','Rene Phillips','2743 Bering St.','Anchorage','USA','a5images/MissingImageSmall2.png','OLDWO'],['OTTIK','Ottilies Käseladen','Henriette Pfalzheim','Mehrheimerstr. 369','Köln','Germany','a5images/MissingImageSmall2.png','OTTIK'],['PARIS','Paris spécialités','Marie Bertrand','265, boulevard Charonne','Paris','France','a5images/MissingImageSmall2.png','PARIS'],['PERIC','Pericles Comidas clásicas','Guillermo Fernández','Calle Dr. Jorge Cash 321','México D.F.','Mexico','a5images/MissingImageSmall2.png','PERIC'],['PICCO','Piccolo und mehr','Georg Pipps','Geislweg 14','Salzburg','Austria','a5images/MissingImageSmall2.png','PICCO'],['PRINI','Princesa Isabel Vinhos','Isabel de Castro','Estrada da saúde n. 58','Lisboa','Portugal','a5images/MissingImageSmall2.png','PRINI'],['QUEDE','Que Delícia','Bernardo Batista','Rua da Panificadora, 12','Rio de Janeiro','Brazil','a5images/MissingImageSmall2.png','QUEDE'],['QUEEN','Queen Cozinha','Lúcia Carvalho','Alameda dos Canàrios, 891','São Paulo','Brazil','a5images/MissingImageSmall2.png','QUEEN'],['QUICK','QUICK-Stop','Horst Kloss','Taucherstraße 10','Cunewalde','Germany','a5images/MissingImageSmall2.png','QUICK'],['RANCH','Rancho grande','Sergio Gutiérrez','Av. del Libertador 900','Buenos Aires','Argentina','a5images/MissingImageSmall2.png','RANCH'],['RATTC','Rattlesnake Canyon Grocery','Paula Wilson','2817 Milton Dr.','Albuquerque','USA','a5images/MissingImageSmall2.png','RATTC'],['REGGC','Reggiani Caseifici','Maurizio Moroni','Strada Provinciale 124','Reggio Emilia','Italy','a5images/MissingImageSmall2.png','REGGC'],['RICAR','Ricardo Adocicados','Janete Limeira','Av. Copacabana, 267','Rio de Janeiro','Brazil','a5images/MissingImageSmall2.png','RICAR'],['RICSU','Richter Supermarkt','Michael Holz','Grenzacherweg 237','Genève','Switzerland','a5images/MissingImageSmall2.png','RICSU'],['ROMEY','Romero y tomillo','Alejandra Camino','Gran Vía, 1','Madrid','Spain','a5images/MissingImageSmall2.png','ROMEY'],['SANTG','Santé Gourmet','Jonas Bergulfsen','Erling Skakkes gate 78','Stavern','Norway','a5images/MissingImageSmall2.png','SANTG'],['SAVEA','Save-a-lot Markets','Jose Pavarotti','187 Suffolk Ln.','Boise','USA','a5images/MissingImageSmall2.png','SAVEA'],['SEVES','Seven Seas Imports','Hari Kumar','90 Wadhurst Rd.','London','UK','a5images/MissingImageSmall2.png','SEVES'],['SIMOB','Simons bistro','Jytte Petersen','Vinbæltet 34','København','Denmark','a5images/MissingImageSmall2.png','SIMOB'],['SPECD','Spécialités du monde','Dominique Perrier','25, rue Lauriston','Paris','France','a5images/MissingImageSmall2.png','SPECD'],['SPLIR','Split Rail Beer & Ale','Art Braunschweiger','P.O. Box 555','Lander','USA','a5images/MissingImageSmall2.png','SPLIR'],['SUPRD','Suprêmes délices','Pascale Cartrain','Boulevard Tirou, 255','Charleroi','Belgium','a5images/MissingImageSmall2.png','SUPRD'],['THEBI','The Big Cheese','Liz Nixon','89 Jefferson Way\nSuite 2','Portland','USA','a5images/MissingImageSmall2.png','THEBI'],['THECR','The Cracker Box','Liu Wong','55 Grizzly Peak Rd.','Butte','USA','a5images/MissingImageSmall2.png','THECR'],['TOMSP','Toms Spezialitäten','Karin Josephs','Luisenstr. 48','Münster','Germany','a5images/MissingImageSmall2.png','TOMSP'],['TORTU','Tortuga Restaurante','Miguel Angel Paolino','Avda. Azteca 123','México D.F.','Mexico','a5images/MissingImageSmall2.png','TORTU'],['TRADH','Tradição Hipermercados','Anabela Domingues','Av. Inês de Castro, 414','São Paulo','Brazil','a5images/MissingImageSmall2.png','TRADH'],['TRAIH','Trail\'s Head Gourmet Provisioners','Helvetius Nagy','722 DaVinci Blvd.','Kirkland','USA','a5images/MissingImageSmall2.png','TRAIH'],['VAFFE','Vaffeljernet','Palle Ibsen','Smagsløget 45','Århus','Denmark','a5images/MissingImageSmall2.png','VAFFE'],['VICTE','Victuailles en stock','Mary Saveley','2, rue du Commerce','Lyon','France','a5images/MissingImageSmall2.png','VICTE'],['VINET','Vins et alcools Chevalier','Paul Henriot','59 rue de l\'Abbaye','Reims','France','a5images/MissingImageSmall2.png','VINET'],['WANDK','Die Wandernde Kuh','Rita Müller','Adenauerallee 900','Stuttgart','Germany','a5images/MissingImageSmall2.png','WANDK'],['WARTH','Wartian Herkku','Pirkko Koskitalo','Torikatu 38','Oulu','Finland','a5images/MissingImageSmall2.png','WARTH'],['WELLI','Wellington Importadora','Paula Parente','Rua do Mercado, 12','Resende','Brazil','a5images/MissingImageSmall2.png','WELLI'],['WHITC','White Clover Markets','Karl Jablonski','305 - 14th Ave. S.\nSuite 3B','Seattle','USA','a5images/MissingImageSmall2.png','WHITC'],['WILMK','Wilman Kala','Matti Karttunen','Keskuskatu 45','Helsinki','Finland','a5images/MissingImageSmall2.png','WILMK'],['WOLZA','Wolski  Zajazd','Zbyszek Piestrzeniewicz','ul. Filtrowa 68','Warszawa','Poland','a5images/MissingImageSmall2.png','WOLZA']]); 
+DLG1_DlgObj._listViewData['MENULIST'] = A5DataArrayToObject(['menuChoices'],[['Selection Tool'],['Vertical'],['Horizontal'],['Skil-aire.com']]);
+;
+DLG1_DlgObj.setStateInfo({ 	__dialogGuid: 'd9a06000-960c-425f-9897-c2e6621ad9aa', 	__dtfmt: 'MM/dd/yyyy' });
+DLG1_DlgObj._controls['CUSTOMERLIST'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['CUSTOMERLIST'],  settings: DLG1_DlgObj._listViewSettings['CUSTOMERLIST'] }
+DLG1_DlgObj._controls['MENULIST'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['MENULIST'],  settings: DLG1_DlgObj._listViewSettings['MENULIST'] }
+DLG1_DlgObj.setVariables({});
+DLG1_DlgObj._dataBoundControls = ['CUSTOMERID','CONTACTNAME','COMPANYNAME','ADDRESS','CITY','COUNTRY','IMAGE'];
+DLG1_DlgObj._primaryTableAlias = 'CUSTOMERS';
+DLG1_DlgObj._listControlsInfo = {};
+DLG1_DlgObj.createWindow('DROPDOWNMENU','dropdown',
+	{
+	body: {
+		content: {
+			type: 'element',
+			elementId: 'DLG1.V.R1.DROPDOWNMENU1'
+		},
+		scroll: {
+			axis: 'both',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	height: '',
+	width: '',
+	title: {
+		html: 'Window',
+		show: false,
+		location: 'top',
+		direction: 'ltr'
+	},
+	disableMove: false,
+	theme: 'iOS:dropdown',
+	pointer: {
+		show: true,
+		location: 'auto'
+	}
+}
+	);
+DLG1_DlgObj._functions._showContainerWindow_DROPDOWNMENU1 = function(objEle) {
+	var currWindow = DLG1_DlgObj.getWindow('DROPDOWNMENU');
+	if(typeof DLG1_DlgObj._openWindows == 'undefined') DLG1_DlgObj._openWindows = {};
+	DLG1_DlgObj._openWindows['DROPDOWNMENU1'] = currWindow;
+	currWindow.show('dropdown-right',objEle);
+	}	
+DLG1_DlgObj.createWindow('SLIDEINMENU','modalpopup',
+	{
+	lockUIClassName: 'A5InvisibleLock',
+	body: {
+		content: {
+			type: 'element',
+			elementId: 'DLG1.V.R1.SLIDEINMENU'
+		},
+		scroll: false,
+		style: 'padding:0px;'
+	},
+	height: '100%',
+	width: '200px',
+	title: {
+		html: 'Window',
+		show: false,
+		location: 'top',
+		direction: 'ltr'
+	},
+	disableMove: true,
+	theme: 'iOS:panel',
+	header: {
+		show: true,
+		html: '<button class="iOSButton" style="float: left "onclick="A5.windows.getFromElement(this).hide();">\n<img style="border:none; vertical-align:middle; margin:-10px 0px -12px 0px; width: 35px;" src="a5images/menuPanel.png" />\n</button>\n\n',
+		style: 'text-align: center;'
+	},
+	onShow: function() {var obj = DLG1_DlgObj.getControl('MENULIST');
+obj.refresh();
+;},
+	onResize: function() {var obj = DLG1_DlgObj.getControl('MENULIST');
+obj.refresh();
+;},
+	animation: {
+		show: {
+			type: 'css-slide',
+			duration: 100
+		},
+		hide: {
+			type: 'css-slide',
+			duration: 100
+		}
+	}
+}
+	);
+DLG1_DlgObj._functions._showContainerWindow_SLIDEINMENU = function(objEle) {
+	var currWindow = DLG1_DlgObj.getWindow('SLIDEINMENU');
+	if(typeof DLG1_DlgObj._openWindows == 'undefined') DLG1_DlgObj._openWindows = {};
+	DLG1_DlgObj._openWindows['SLIDEINMENU'] = currWindow;
+	currWindow.show('dock','left');
+	}
+DLG1_DlgObj._functions.__fillContainer_CUSTOMERLIST = function() { 
+	var path = DLG1_PanelObj._panelPath['PANEL_CUSTOMERLIST'];
+	if(typeof path != 'undefined') {
+		var panel = DLG1_PanelObj.getPanel(path);
+		var id = panel.src.getPanelId('body');
+	} else {
+		var id = DLG1_PanelObj.getPanelId('body');
+	}
+	DLG1_DlgObj._listViewSettings['CUSTOMERLIST'].containerId = id;
+	//blow away any existing content in the panel
+	$(id).innerHTML = '';
+}
+DLG1_DlgObj._functions.__fillContainer_CUSTOMERLIST();
+DLG1_DlgObj._functions.__fillContainer_MENULIST = function() { 
+	var rExp = new RegExp('^A5dlg[0-9]*\.BODY');
+	var cEle = $('DLG1.V.R1.SLIDEINMENU');
+	//test to see if the container parent node is a window body. if so, then set the container to the window
+	if(rExp.test(cEle.parentNode.id)) {
+		var pEle = cEle.parentNode;
+		DLG1_DlgObj._listViewSettings['MENULIST'].containerId = pEle.id;
+		pEle.innerHTML = '';
+	} else {
+		DLG1_DlgObj._listViewSettings['MENULIST'].containerId = cEle.id;
+		//blow away any existing content in the container
+		cEle.innerHTML = '';
+	}
+}
+DLG1_DlgObj._functions.__fillContainer_MENULIST();
+DLG1_DlgObj._hasPanels = true;
+DLG1_DlgObj._hasOnSynchronizeEvent = false;
+A5.__dtfmt = 'MM/dd/yyyy';A5.__tfmt = '';
+A5.__flagWorkingPreview = false;
+A5.__flagIIS = false;
+A5.__flagSimulateIIS = true;
+DLG1_DlgObj._functions.calcOrientation = function() { 
+	if(typeof DLG1_DlgObj == 'undefined') return '';
+	var orientation = DLG1_DlgObj.getOrientation();
+	if( orientation == 'landscape') {
+			//landscape
+			if(DLG1_DlgObj._orientation != 'landscape') {
+				DLG1_DlgObj._fireWatches(1);	
+				DLG1_DlgObj._orientation = 'landscape';
+				DLG1_DlgObj._executeEvent('onOrientationChange',{orientation: 'landscape'});
+			}
+	} else {
+		//portrait
+		if(DLG1_DlgObj._orientation != 'portrait') {
+				DLG1_DlgObj._fireWatches(1);	
+				DLG1_DlgObj._orientation = 'portrait';
+				DLG1_DlgObj._executeEvent('onOrientationChange',{orientation: 'portrait'});
+			}
+	}
+}
+	A5.flags.cordovaLoaded = true;
+	try {
+		document.addEventListener('deviceready', function() { 
+			DLG1_DlgObj._executeEvent('onCordovaReady',{});
+			DLG1_DlgObj._executeEvent('onPhoneGapReady',{});
+			DLG1_DlgObj._cordovaReady = true;
+			navigator.geolocation.getAccuratePosition = function(geolocationSuccess, geolocationError, options) {
+	var _lastCheckedPosition = null;
+	var _locationEventCount = 0;
+	options = options || {};
+	options.context = this;
+    function _checkLocation(pos) {
+        _lastCheckedPosition = pos;
+        _locationEventCount++;
+        if ((pos.coords.accuracy <= options.desiredAccuracy) && (_locationEventCount > options.ignoreResultCount)) {
+            clearTimeout(_timerID);
+            navigator.geolocation.clearWatch(_watchID);
+            _foundPosition(pos);
+        } 
+    }
+    function _stopLocationCheck() {
+    	 var error = {};
+    	 error.code = 0;
+    	 error.message = 'Timeout: No results';
+        navigator.geolocation.clearWatch(_watchID);
+        _lastCheckedPosition ? _foundPosition(_lastCheckedPosition) : geolocationError.call(options.context,error);
+    }
+    function _onError(error) {
+        clearTimeout(_timerID);
+        navigator.geolocation.clearWatch(_watchID);
+        geolocationError.call(options.context,error);
+    }
+    function _foundPosition(pos) {
+        geolocationSuccess.call(options.context,pos);
+    }
+    if (!options.maxWait) {            
+    	options.maxWait = 10000; 
+    }	
+    if (!options.desiredAccuracy) {
+    	  options.desiredAccuracy = 20; 
+    }
+    if (!options.timeout) {
+        options.timeout = options.maxWait;
+	 }
+	 if (!options.ignoreResultCount) {
+	 		options.ignoreResultCount = 1;
+	 }
+    options.maximumAge = 0; 
+    options.enableHighAccuracy = true; 
+    var _watchID = navigator.geolocation.watchPosition(_checkLocation, _onError, options);
+    var _timerID = setTimeout(_stopLocationCheck, options.maxWait); 
+}
+		} , false);	
+	}
+	catch(err) {}
+DLG1_DlgObj._waitGif = 'css/A5System/Images/wait.gif';
+DLG1_DlgObj._layoutMode = 'containerwidth';
+DLG1_DlgObj._responsiveRulesMode = 'firsttrue';
+DLG1_DlgObj.__controlNesting = {
+PANELHEADER_5: ['container:CONTAINER_8'],
+CONTAINER_8: [],
+CONTAINER_1: ['container:CONTAINER_7'],
+CONTAINER_7: [],
+CONTAINER_4: [],
+TAB_1: ['tabPane:TAB_1#1','tabPane:TAB_1#2'],
+"TAB_1#1": ['Search'],
+"TAB_1#2": ['searchContactName','searchCompanyName','searchCity','searchCountry'],
+CONTAINER_3: [],
+CONTAINER_2: [],
+PANELHEADER_6: ['container:CONTAINER_9'],
+CONTAINER_9: [],
+PANELHEADER_7: ['container:CONTAINER_10'],
+CONTAINER_10: [],
+PANELHEADER_8: ['container:CONTAINER_11'],
+CONTAINER_11: [],
+DROPDOWNMENU1: ['container:CONTAINER_6'],
+CONTAINER_6: [],
+SLIDEINMENU: ['MENULIST']
+}
+DLG1_DlgObj._listsDV = [];
+DLG1_DlgObj._listControls = ['CUSTOMERLIST','MENULIST']
+DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_02701a0c4208493da3b8632c4071c05d',friendlyName: '',description: '',persistVariableValues: false,__version: 1,persistComponentState: false,workingPreviewTestingMode: 'Browser',workingPreviewTestingFolder: '',restore: {variables: false,data: false,state: false},compressData: false,minify: false,compressListData: false}
+DLG1_DlgObj.__r = ['3rkeltoSdQc=']
+DLG1_DlgObj._staticHTMLMode = false
+DLG1_DlgObj._EDITOR_EDITORSET = {};
+DLG1_DlgObj.styleName = 'iOS';
+DLG1_DlgObj.styleVersion = 2
+DLG1_DlgObj.framesInfo = {
+};
+$e.add('DLG1.V.R1.BUTTON_14',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'SLIDEINMENU');
+},this,false,'DLG1.V.R1.BUTTON_14');
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_8',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'SLIDEINMENU');
+},this,false,'DLG1.V.R1.BUTTON_8');
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_9',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.BUTTON_9');
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.SIMPLESEARCHBUTTON',A5.d.evnts.click,function(e) {
+DLG1_DlgObj._functions.action_SIMPLESEARCHBUTTON();
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.SIMPLESEARCHBUTTON');
+
+
+$e.add('DLG1.V.R1.CLEARSIMPLESEARCHBUTTON',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.setValue('Search','');
+DLG1_DlgObj.buttonClick('SIMPLESEARCHBUTTON');
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.CLEARSIMPLESEARCHBUTTON');
+
+
+
+
+
+
+$e.add('DLG1.V.R1.ADVANCEDSEARCHBUTTON',A5.d.evnts.click,function(e) {
+DLG1_DlgObj._functions.action_ADVANCEDSEARCHBUTTON();
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.ADVANCEDSEARCHBUTTON');
+
+
+$e.add('DLG1.V.R1.CLEARADVANCEDSEARCHBUTTON',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.setValue('searchContactName','');
+DLG1_DlgObj.setValue('searchCompanyName','');
+DLG1_DlgObj.setValue('searchCity','');
+DLG1_DlgObj.setValue('searchCountry','');
+DLG1_DlgObj.buttonClick('ADVANCEDSEARCHBUTTON');
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.CLEARADVANCEDSEARCHBUTTON');
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_7',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('PANEL_CUSTOMERLIST',true);
+},this,false,'DLG1.V.R1.BUTTON_7');
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_10',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'DROPDOWNMENU1');
+},this,false,'DLG1.V.R1.BUTTON_10');
+
+
+
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_SUBMIT',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.submit();
+},this,false,'DLG1.V.R1.BUTTON_SUBMIT');
+
+
+$e.add('DLG1.V.R1.BUTTON_RESET',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.resetForm();
+},this,false,'DLG1.V.R1.BUTTON_RESET');
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_15',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.showContainerWindow(this,'SLIDEINMENU');
+DLG1_DlgObj.panelSetActive('TOOL',true);
+},this,false,'DLG1.V.R1.BUTTON_15');
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_16',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('TOOL',true);
+},this,false,'DLG1.V.R1.BUTTON_16');
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_17',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('TOOL',true);
+},this,false,'DLG1.V.R1.BUTTON_17');
+DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
+DLG1_DlgObj._fireWatches(1);
+
+
+if(!A5.flags.isMobile) $e.add(window,'resize',DLG1_DlgObj._functions.calcOrientation);
+else $e.add(window,'orientationchange',DLG1_DlgObj._orientationChangeHandler,DLG1_DlgObj,true);
+DLG1_DlgObj._functions.calcOrientation();
+
+DLG1_DlgObj._tabPaneChange('TAB_1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var listObj = DLG1_DlgObj.getControl('CUSTOMERLIST');
+if(listObj) listObj._state.recordCount = 91;
+if(listObj) listObj._state.recordCountFormatted = '91';
+if(listObj) listObj._state.lastBreakValue = '';
+if(listObj) listObj._state.pageCount = 1;
+if(listObj) listObj._state.pageSize = 20;
+if(listObj) {var ele = $('DLG1.CUSTOMERLIST.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
+if(listObj) listObj._state.paginated = false;
+if(listObj) listObj._state._optimizedJSON = false;
+if(listObj) listObj._state.filter = '';
+if(listObj) listObj._state.having = '';
+if(listObj) listObj._state.order = '';
+if(listObj) listObj._state.filterParameters = '';
+if(listObj) listObj._state.whereClause = '';
+if(listObj) listObj._state.whereParameters = '';
+		
+		var flagPersist = false;
+		if(typeof listObj._flagPersistDataOK != 'undefined') { 
+			if(listObj._flagPersistDataOK) { 
+				var data = listObj._data;
+				listObj.persistToStorage({mode:'populate', data: data});
+			}
+		}
+		
+		
+;
+listObj._state.pageCount = 1;
+listObj.setDisplay('content-footer',false);
+DLG1_DlgObj._list_executeEvent('CUSTOMERLIST','afterRenderComplete',{});
+
+if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var listObj = DLG1_DlgObj.getControl('MENULIST');
+if(listObj) listObj._state.recordCount = 4;
+if(listObj) listObj._state.recordCountFormatted = '4';
+if(listObj) listObj._state.lastBreakValue = '';
+if(listObj) listObj._state.pageCount = 1;
+if(listObj) listObj._state.pageSize = 20;
+if(listObj) {var ele = $('DLG1.MENULIST.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
+if(listObj) listObj._state.paginated = false;
+if(listObj) listObj._state._optimizedJSON = false;
+if(listObj) listObj._state.filter = '';
+if(listObj) listObj._state.having = '';
+if(listObj) listObj._state.order = '';
+if(listObj) listObj._state.filterParameters = '';
+if(listObj) listObj._state.whereClause = '';
+if(listObj) listObj._state.whereParameters = '';
+		
+		var flagPersist = false;
+		if(typeof listObj._flagPersistDataOK != 'undefined') { 
+			if(listObj._flagPersistDataOK) { 
+				var data = listObj._data;
+				listObj.persistToStorage({mode:'populate', data: data});
+			}
+		}
+		
+		
+;
+DLG1_DlgObj._list_executeEvent('MENULIST','afterRenderComplete',{});
+
+if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
+
+
+setTimeout(function() { },0);
+DLG1_DlgObj._listsWithJSFuncDataSource = {};
+
+
+DLG1_DlgObj._executeEvent('onInitializeComplete');
+DLG1_DlgObj.initialized = true;
+
+
+
+
+var ele = $('DLG1.GLOBALERRORS')
+if(ele) $svs(ele,'Could not connect to database. Error reported was: Internal Error - Can\'t find named connection<br> \'Northwind\' - while converting named connection to connection string'); 
+if(ele) ele.style.display = '';;
+
+
+
+var dataObj = {
+};
+
+DLG1_DlgObj.populate(dataObj);
+DLG1_DlgObj._fireWatches(1);
+
+DLG1_DlgObj._onRenderComplete = function() { DLG1_DlgObj._runJSOnLoad(); DLG1_DlgObj._findActiveLayoutRule(); }; 
+
+setTimeout(function() { var p = DLG1_DlgObj.panelGet('PANELNAVIGATOR_1'); if(p._sizing == 'window') { p._sizeWindow();} else { p.refresh(); } },100);
+setTimeout(function() {DLG1_DlgObj._executeEvent('onRenderComplete'); DLG1_DlgObj.flagRenderComplete = true;  DLG1_DlgObj._restoreFromLocalStorage(); },1);
+var o2 = 'portrait';
+if(window.innerHeight < window.innerWidth) o2 = 'landscape';
+DLG1_DlgObj._screen = {h: window.innerHeight, w: window.innerWidth, o: o2};
+
+DLG1_DlgObj._getOnlineStatus();
+try {
+window.addEventListener("offline",function() { DLG1_DlgObj._fireOnConnectionChangeEvent() });
+window.addEventListener("online",function() { DLG1_DlgObj._fireOnConnectionChangeEvent() });
+} catch(err){}
+
+setTimeout(function() {$e.execute('device.screen','a5resize')},1);
+setTimeout(function() { },10);;
+DLG1_DlgObj._activeLanguage = '<Default>';
+</script>
+
+</body>
+</html>
