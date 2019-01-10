@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+
+<%a5
+Delete tmpl_SKIL_AIRESELECT
+DIM tmpl_SKIL_AIRESELECT as P
+tmpl_SKIL_AIRESELECT = a5w_load_component("Skil-aireSelect") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:Skil-aireSelect)
+
+'Override settings start -----------------------------------------
+with tmpl_SKIL_AIRESELECT
+.alias = "SKIL_AIRESELECT"
+_dialogFilename = "Skil-aireSelect"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_SKIL_AIRESELECT
+dim x_SKIL_AIRESELECT as p
+x_SKIL_AIRESELECT = a5w_run_Component(tmpl_SKIL_AIRESELECT) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:Skil-aireSelect)
+
+?x_SKIL_AIRESELECT.Output.Head.JavaScript
+?x_SKIL_AIRESELECT.Output.Head.CSS_Link
+
+?x_SKIL_AIRESELECT.Output.Head.Title 
+%>
+
+
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--CSS for tmpl -->
+<link rel="stylesheet" type="text/css" href="file:///C:/Program Files (x86)/a5V12/css/iOS/style.css">
+<!--Alpha Five Temporary Code End -->
+
+
+<meta name="generator" content="Alpha Anywhere HTML Editor Version 12 Build 2999-4519">
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<title></title>
+</head>
+
+<%a5 ?x_SKIL_AIRESELECT.Output.Body.Body_tag %>
+<!--Alpha Five Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="iOSPage">	
+
+
+<p>
+<%a5 ?x_SKIL_AIRESELECT.Output.Body.Dialog2_HTML %></p>
+
+</body></html>
